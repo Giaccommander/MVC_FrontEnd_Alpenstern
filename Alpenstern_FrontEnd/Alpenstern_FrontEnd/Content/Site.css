@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color:#f2ebde;
+    background: url('themes/base/images/AppWerbeLogo.png') no-repeat;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,3 +23,39 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.containerHandy{
+    position:absolute;
+    left:198px;
+    top:290px;
+}
+
+.MobileContainerHandy{
+    position:absolute;
+    left: 200px;
+    top: 300px;
+    width: 265px;
+}
+
+.AppStoreButtons{
+    position:absolute;
+    left:490px;
+    top:600px;
+}
+
+.MobileAppStoreButtons{
+    position:absolute;
+    left:155px;
+    top:830px;
+    display:inline-block;
+    height:100px; 
+}
+.MobileBackground{
+    
+    position:absolute;
+    left:10px;
+    top:250px;
+}
+
+
+
