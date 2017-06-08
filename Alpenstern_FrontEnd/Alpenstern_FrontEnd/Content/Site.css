@@ -40,7 +40,7 @@ body, h1{
         border: solid 2px #5d4037;
         background-color: rgba(198, 177, 142, 0.60);
         border-radius: 10px;
-        
+        box-shadow: rgba(0, 0, 0, 0.50)20px 20px 20px;
         color: azure;
 }
 
