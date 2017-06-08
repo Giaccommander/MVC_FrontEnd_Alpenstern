@@ -129,6 +129,23 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\icons\agb_icon.png" />
+    <Content Include="Content\images\icons\area_icon.png" />
+    <Content Include="Content\images\icons\backcall_icon.png" />
+    <Content Include="Content\images\icons\contact_icon.png" />
+    <Content Include="Content\images\icons\coupon_icon.png" />
+    <Content Include="Content\images\icons\destination_icon.png" />
+    <Content Include="Content\images\icons\food_icon.png" />
+    <Content Include="Content\images\icons\gallery_icon.png" />
+    <Content Include="Content\images\icons\game_icon.png" />
+    <Content Include="Content\images\icons\history_icon.png" />
+    <Content Include="Content\images\icons\hotel_icon.png" />
+    <Content Include="Content\images\icons\login_icon.png" />
+    <Content Include="Content\images\icons\restaurant_icon.png" />
+    <Content Include="Content\images\icons\rooms_icon.png" />
+    <Content Include="Content\images\icons\service_icon.png" />
+    <Content Include="Content\images\icons\team_icon.png" />
+    <Content Include="Content\images\icons\wellness_icon.png" />
     <Content Include="Content\images\logo_alpenStern.png" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
