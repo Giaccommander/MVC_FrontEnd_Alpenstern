@@ -1,9 +1,15 @@
-﻿body {
+﻿
+@font-face {
+    font-family: 'Marcellus-Regular';
+    src: url('../fonts/Marcellus-Regular.ttf') format('truetype');
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color:#f2ebde;
+   
 }
-
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -23,3 +29,34 @@ select,
 textarea {
     max-width: 280px;
 }
+ 
+body, h1{
+    font-family: 'Marcellus-Regular';
+}
+
+.panel-splash
+{
+    text-align: center;
+        border: solid 2px #5d4037;
+        background-color: rgba(198, 177, 142, 0.60);
+        border-radius: 10px;
+        
+        color: azure;
+}
+
+@media (min-width: 767px) /*sm*/
+{
+    .panel-splash
+    {
+        position: absolute;
+        z-index: 2;
+        top: 20%;
+        left: calc(10px + 10%);
+        width: 40%;
+        
+    }
+}
+
+ .glyphicon-star{
+     color: gold;
+ }
