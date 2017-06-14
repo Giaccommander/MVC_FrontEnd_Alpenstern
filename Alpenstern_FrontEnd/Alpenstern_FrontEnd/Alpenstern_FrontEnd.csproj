@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -129,6 +130,26 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\agb_icon.png" />
+    <Content Include="Content\img\area_icon.png" />
+    <Content Include="Content\img\backcall_icon.png" />
+    <Content Include="Content\img\contact_icon.png" />
+    <Content Include="Content\img\coupon_icon.png" />
+    <Content Include="Content\img\destination_icon.png" />
+    <Content Include="Content\img\food_icon.png" />
+    <Content Include="Content\img\gallery_icon.png" />
+    <Content Include="Content\img\game_icon.png" />
+    <Content Include="Content\img\history_icon.png" />
+    <Content Include="Content\img\hotel_icon.png" />
+    <Content Include="Content\img\login_icon.png" />
+    <Content Include="Content\img\mail_icon.png" />
+    <Content Include="Content\img\pw_icon.png" />
+    <Content Include="Content\img\restaurant_icon.png" />
+    <Content Include="Content\img\rooms_icon.png" />
+    <Content Include="Content\img\service_icon.png" />
+    <Content Include="Content\img\team_icon.png" />
+    <Content Include="Content\img\wellness_icon.png" />
+    <Content Include="Content\JavaScript.js" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -206,6 +227,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
