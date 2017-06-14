@@ -42,6 +42,10 @@ textarea {
     max-width: 280px;
 }
 
+body, h1{
+    font-family: 'Marcellus-Regular';
+}
+
 /*#region Login Section */
 #login {
     padding-top: 50px
@@ -133,9 +137,6 @@ textarea {
 }
  /*#endregion */
 
-body, h1{
-    font-family: 'Marcellus-Regular';
-}
 
 /*#region startseite */
 .panel-splash
