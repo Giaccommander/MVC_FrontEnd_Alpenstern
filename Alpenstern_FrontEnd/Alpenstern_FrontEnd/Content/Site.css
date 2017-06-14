@@ -42,8 +42,7 @@ textarea {
     max-width: 280px;
 }
 
-
-/*#region login */
+/*#region Login Section */
 #login {
     padding-top: 50px
 }
@@ -104,7 +103,7 @@ textarea {
 }
 /*#endregion */
 
-/*#region Inputs&Buttons */
+/*#region Inputs & Buttons */
 .form-control {
     color: #5D4037;
 }
@@ -120,6 +119,7 @@ textarea {
 /*#endregion */
 
 /*#region Footer */
+
 #footer {
     color: #6d6d6d;
     font-size: 12px;
@@ -135,7 +135,9 @@ textarea {
 body, h1{
     font-family: 'Marcellus-Regular';
 }
+/*#endregion */
 
+/*#region startseite */
 .panel-splash
 {
     text-align: center;
@@ -158,11 +160,12 @@ body, h1{
         
     }
 }
-
  .glyphicon-star{
      color: gold;
     }
+/*#endregion */
 
+/*#region navbar */
 .navlogo {
     max-height: 55px;
 }
@@ -185,8 +188,6 @@ nav ul li a:hover {
     height:15px;
     width:15px;
 }
-
-/*#region AppDownload */
 
 
 /*#endregion */
