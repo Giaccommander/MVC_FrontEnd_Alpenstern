@@ -132,10 +132,10 @@ textarea {
     color: inherit;
 }
  /*#endregion */
+
 body, h1{
     font-family: 'Marcellus-Regular';
 }
-/*#endregion */
 
 /*#region startseite */
 .panel-splash
@@ -187,6 +187,27 @@ nav ul li a:hover {
 .dropicon {
     height:15px;
     width:15px;
+}
+
+
+/*#endregion */
+
+
+/*#region Appdownload */
+.Content-Appdownload {
+    background: url('img/App-Foto/APP-Hintergrund.png') no-repeat;
+    height:900px;
+}
+.position{
+    
+}
+.HandyBackground {
+    background: url('img/App-Foto/App-Foto1.png') no-repeat;
+    position:relative;
+    margin-left: 60px;
+    margin-top:300px;
+    width:80px;
+    height:250px;
 }
 
 
