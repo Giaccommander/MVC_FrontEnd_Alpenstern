@@ -27,5 +27,9 @@ namespace Alpenstern_FrontEnd.Controllers
             return View();
         }
 
+		public ActionResult Gaestebuch()
+		{
+			return View();
+		}
     }
 }
