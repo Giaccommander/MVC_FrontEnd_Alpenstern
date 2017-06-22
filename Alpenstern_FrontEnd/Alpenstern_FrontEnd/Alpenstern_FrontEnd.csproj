@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppDownloadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -130,6 +131,52 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_außen_2.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Caesarium.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Dampfbad.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Eingang_oben.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Eingang_unten.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Emotionarium_2000x750.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Emotionarium_900x60.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Emotionarium_orange.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_innen_1.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Relaxarium_1.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Relaxarium_2.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Ruheraum_1.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Ruheraum_2.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Wuidera_Sauna_2000x750.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Wuidera_Sauna_900x60.jpg" />
+    <Content Include="Content\images\img-hotel\AlpenSpa_Wuidera_Sauna_Aufguss.jpg" />
+    <Content Include="Content\images\img-hotel\Alpenstern_Fitness_Eingang.jpg" />
+    <Content Include="Content\images\img-hotel\Alpenstern_Fruehstuecksbuffet.jpg" />
+    <Content Include="Content\images\img-hotel\Alpenstern_Gourmet.jpg" />
+    <Content Include="Content\images\img-hotel\Alpenstern_Hallenbad_2000x750.jpg" />
+    <Content Include="Content\images\img-hotel\Alpenstern_Kulinarik_2000x750.jpg" />
+    <Content Include="Content\images\img-hotel\Alpenstern_Kulinarik_900x600.jpg" />
+    <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_1.jpg" />
+    <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_2.jpg" />
+    <Content Include="Content\images\img-hotel\Hinterberger_Stausee.jpg" />
+    <Content Include="Content\img\agb_icon.png" />
+    <Content Include="Content\img\area_icon.png" />
+    <Content Include="Content\img\backcall_icon.png" />
+    <Content Include="Content\img\contact_icon.png" />
+    <Content Include="Content\img\coupon_icon.png" />
+    <Content Include="Content\img\destination_icon.png" />
+    <Content Include="Content\img\food_icon.png" />
+    <Content Include="Content\img\gallery_icon.png" />
+    <Content Include="Content\img\game_icon.png" />
+    <Content Include="Content\img\history_icon.png" />
+    <Content Include="Content\img\hotel_icon.png" />
+    <Content Include="Content\img\login_icon.png" />
+    <Content Include="Content\img\mail_icon.png" />
+    <Content Include="Content\img\pw_icon.png" />
+    <Content Include="Content\img\restaurant_icon.png" />
+    <Content Include="Content\img\rooms_icon.png" />
+    <Content Include="Content\img\service_icon.png" />
+    <Content Include="Content\img\team_icon.png" />
+    <Content Include="Content\img\wellness_icon.png" />
+    <Content Include="Content\JavaScript.js" />
     <Content Include="Content\images\icons\agb_icon.png" />
     <Content Include="Content\images\icons\area_icon.png" />
     <Content Include="Content\images\icons\backcall_icon.png" />
@@ -160,12 +207,12 @@
     <Content Include="Content\themes\base\datepicker.css" />
     <Content Include="Content\themes\base\dialog.css" />
     <Content Include="Content\themes\base\draggable.css" />
-    <Content Include="Content\themes\base\images\Androidstore.png" />
-    <Content Include="Content\themes\base\images\app1.png" />
-    <Content Include="Content\themes\base\images\app2.png" />
-    <Content Include="Content\themes\base\images\appstore.png" />
-    <Content Include="Content\themes\base\images\AppWerbeLogo.png" />
-    <Content Include="Content\themes\base\images\layout.png" />
+    <Content Include="Content\img\App-Foto\App-Androidstore.png" />
+    <Content Include="Content\img\App-Foto\App-Foto1.png" />
+    <Content Include="Content\img\App-Foto\App-Foto2.png" />
+    <Content Include="Content\img\App-Foto\appstore.png" />
+    <Content Include="Content\img\App-Foto\APP-Hintergrund.png" />
+    <Content Include="Content\img\App-Foto\layout.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -235,6 +282,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\AppDownload\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
