@@ -27,5 +27,12 @@ namespace Alpenstern_FrontEnd.Controllers
             return View();
         }
 
+        public ActionResult Spa()
+        {
+            
+
+            return View();
+        }
+
     }
 }
