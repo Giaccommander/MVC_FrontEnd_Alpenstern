@@ -160,6 +160,7 @@
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
     <Content Include="Content\img\backcall_icon.png" />
+    <Content Include="Content\img\book.png" />
     <Content Include="Content\img\contact_icon.png" />
     <Content Include="Content\img\coupon_icon.png" />
     <Content Include="Content\img\destination_icon.png" />
