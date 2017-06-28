@@ -33,6 +33,14 @@ namespace Alpenstern_FrontEnd.Controllers
 
             return View();
         }
+        public ActionResult kulinarik()
+        {
+            return View();
+        }
+        public ActionResult hotel()
+        {
+            return View();
+        }
 
     }
 }
