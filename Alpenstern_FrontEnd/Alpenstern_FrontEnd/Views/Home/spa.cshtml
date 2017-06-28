@@ -2,11 +2,38 @@
     ViewBag.Title = "Spa-Bereich";
 }
 
+<head>
+    <style>
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 50px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
 
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
 <body>
     <div>
     <h1>Willkommen in unserem Spa und Wellnes Bereich</h1>
     </div>
+   
     @*<div class="row">
         <div class="col-xs-6 col-md-3">
             <a href="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" class="thumbnail">
@@ -18,21 +45,26 @@
             <div class="col-lg-6">Hier ist ein Bild von unserem Außenbereich</div>
         </div>*@
 
-    *******************************************************************
+    *******************************************************************<br />
+    <h2>Unser Aussenbereich</h2>
 
-    <div class="row">
+    @*<div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="...">
                 <div class="caption">
                     <h3>Hier ist ein Bild von unserem Außenbereich</h3>
                     <p>In unserem Außenbereich erleben sie entspannung pur, sofern sie ein dickes taschel haben!!!</p>
-                    <p><a href="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" target="_blank" class="btn btn-primary" 
-                          role="button">Vollansicht</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    <p>
+                        <a href="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" target="_blank" class="btn btn-primary"
+                           role="button">Vollansicht</a>
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Aus - Einklappen</button>
+                        <div id="demo" class="collapse"><img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="test" /></div>
+                    </p>
                 </div>
             </div>
         </div>
-   
+   </div>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="...">
@@ -62,7 +94,36 @@
                     </p>
                 </div>
             </div>
+        </div>*@
+    ***************************************************************
+    <div class="row">
+        <div id="overlay" onclick="off()">
+            <div id="text"><img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="..."></div>
+        </div>
+
+        <div style="padding:20px">
+
+            <img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="..." width="200">
+            <button class="btn-primary btn-lg" onclick="on()">Vollbild</button>
+        </div>
+        <div id="overlay" onclick="off()">
+            <div id="text"><img src="~/Content/images/img-hotel/AlpenSpa_außen_2.jpg" alt="..."></div>
+        </div>
+
+        <div style="padding:20px">
+
+            <img src="~/Content/images/img-hotel/AlpenSpa_außen_2.jpg" alt="..." width="200">
+            <button class="btn-primary btn-lg" onclick="on()">Vollbild</button>
         </div>
     </div>
+    <script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+    </script>
 </body>
 
