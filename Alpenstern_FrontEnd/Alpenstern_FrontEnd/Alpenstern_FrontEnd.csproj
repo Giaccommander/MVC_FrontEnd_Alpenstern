@@ -132,6 +132,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\GameView\arrow-left-icon.png" />
+    <Content Include="Content\images\GameView\arrow-right-icon.png" />
+    <Content Include="Content\images\GameView\letter-a-icon.png" />
+    <Content Include="Content\images\GameView\letter-d-icon.png" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_2.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_Caesarium.jpg" />

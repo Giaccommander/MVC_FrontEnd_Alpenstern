@@ -216,7 +216,13 @@ nav ul li a:hover {
 
 
 /*#region GameView */
-
+h2{
+    padding-top:50px;
+}
+.rand{
+    border: 2px solid black;
+    height: 50px;
+}
 
 
 
