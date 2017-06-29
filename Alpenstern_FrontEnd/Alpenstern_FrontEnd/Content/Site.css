@@ -1,0 +1,215 @@
+﻿
+@font-face {
+    font-family: 'Marcellus-Regular';
+    src: url('../fonts/Marcellus-Regular.ttf') format('truetype');
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color:#f2ebde;
+}
+
+.label_icon{
+    height:25px;
+    width:25px;
+    float:right;
+    position:center;
+    margin-top:2px;
+   margin-right:10px;
+
+}
+
+   
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding: 40px 15px 0;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body, h1{
+    font-family: 'Marcellus-Regular';
+}
+
+/*#region Login Section */
+#login {
+    padding-top: 50px
+}
+#login .form-wrap {
+    width: 30%;
+    margin: 0 auto;
+}
+#login h1 {
+    color: #5D4037;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#login .form-group {
+    margin-bottom: 25px;
+}
+#login .checkbox {
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#login .checkbox.show:before {
+    content: '\e013';
+    color: #5D4037;
+    font-size: 17px;
+    margin: 1px 0 0 3px;
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Glyphicons Halflings';
+}
+#login .checkbox .character-checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    display: inline-block;
+}
+#login .checkbox .label {
+    color: #5D4037;
+    font-size: 13px;
+    font-weight: normal;
+}
+#login .btn.btn-custom {
+    font-size: 14px;
+	margin-bottom: 20px;
+}
+#login .forget {
+    font-size: 13px;
+	text-align: center;
+	display: block;
+}
+/*#endregion */
+
+/*#region Inputs & Buttons */
+.form-control {
+    color: #5D4037;
+}
+.btn-custom {
+    font-weight:500;
+    color: #f2ebde;
+	background-color: #5D4037;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+    color: #f2ebde;
+}
+/*#endregion */
+
+/*#region Footer */
+
+#footer {
+    color: #6d6d6d;
+    font-size: 12px;
+    text-align: center;
+}
+#footer p {
+    margin-bottom: 0;
+}
+#footer a {
+    color: inherit;
+}
+ /*#endregion */
+
+
+/*#region startseite */
+.panel-splash
+{
+    text-align: center;
+        border: solid 2px #5d4037;
+        background-color: rgba(198, 177, 142, 0.60);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.50)20px 20px 20px;
+        color: azure;
+}
+
+@media (min-width: 767px) /*sm*/
+{
+    .panel-splash
+    {
+        position: absolute;
+        z-index: 2;
+        top: 20%;
+        left: calc(10px + 10%);
+        width: 40%;
+        
+    }
+}
+ .glyphicon-star{
+     color: gold;
+    }
+/*#endregion */
+
+/*#region navbar */
+.navlogo {
+    max-height: 55px;
+}
+.navicon{
+    height:25px;
+    width:25px;
+}
+nav ul li a{
+    font-size:18pt;
+    font-weight:600;
+    font-family:Marcellus;
+    color: #5D4037;
+    margin:auto;
+    top:20px;
+}
+nav ul li a:hover {
+    background-color:#f2ebde;
+}
+.dropicon {
+    height:15px;
+    width:15px;
+}
+
+
+/*#endregion */
+
+
+/*#region Appdownload */
+.Content-Appdownload {
+    background: url('img/App-Foto/APP-Hintergrund.png') no-repeat;
+    height:900px;
+}
+.position{
+    
+}
+.HandyBackground {
+    background: url('img/App-Foto/App-Foto1.png') no-repeat;
+    position:relative;
+    margin-left: 60px;
+    margin-top:300px;
+    width:80px;
+    height:250px;
+}
+
+
+/*#endregion */
+

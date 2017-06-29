@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="text-center"><h1>Rückruf Service</h1></div>
+    <p>
+        Sie wünschen einen Rückruf für eventuelle Fragen oder eines Anliegens.<br />
+        Schicken Sie uns Ihre Rufnummer unter der wir sie zurück rufen können.<br />
+        Mit freundlichen grüssen, Ihr Hotel Team
+    </p>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="vorname">Vorname:</label>
+            <input type="text" class="form-control" id="vorname">
+        </div>
+        <div class="form-group">
+            <label for="nachname">Nachname:</label>
+            <input type="text" class="form-control" id="nachname">
+        </div>
+        <div class="form-group">
+            <label for="rufnummer">Rufnummer:</label>
+            <input type="text" class="form-control" id="rufnummer">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Ich stimme zu, das meine Rufnummer zum Zweck des Rückrufes gespeichert wird.</label>
+        </div>
+        <button type="submit" class="btn btn-default">Absenden</button>
+    </form>
+</div>
+
