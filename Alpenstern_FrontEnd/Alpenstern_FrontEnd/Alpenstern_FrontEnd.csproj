@@ -124,6 +124,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="Controllers\ZimmerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -160,6 +161,27 @@
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_1.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_2.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Stausee.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_2000x750.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_900x600.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komfort Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Gang.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Schlafzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Wohnbereich.jpg" />
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
     <Content Include="Content\img\backcall_icon.png" />
@@ -297,6 +319,8 @@
     <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\Home\geschichte.cshtml" />
+    <Content Include="Views\Zimmer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
