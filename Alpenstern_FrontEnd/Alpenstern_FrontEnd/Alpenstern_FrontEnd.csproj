@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppDownloadController.cs" />
+    <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
@@ -132,6 +133,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\GameView\arrow-left-icon.png" />
+    <Content Include="Content\images\GameView\arrow-right-icon.png" />
+    <Content Include="Content\images\GameView\letter-a-icon.png" />
+    <Content Include="Content\images\GameView\letter-d-icon.png" />
     <Content Include="Content\images\%24_35.JPG" />
     <Content Include="Content\images\1484720716-8714-speisekarte3.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
