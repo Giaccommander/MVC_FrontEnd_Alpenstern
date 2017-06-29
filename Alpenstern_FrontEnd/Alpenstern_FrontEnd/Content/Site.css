@@ -231,3 +231,26 @@ nav ul li a {
 
 
 /*#endregion */
+
+/* #region Team */
+
+.team-ueberschrift {
+    font-size: 24px;
+    font-family: Marcellus-Regular;
+    position: center;
+    color: #5D4037;
+}
+
+.team-text {
+    
+    font-family: Marcellus-Regular;
+    color: #5D4037;
+}
+
+.team-chapter {
+    border-bottom: 1px solid #5D4037;
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+
+/* #endregion*/
