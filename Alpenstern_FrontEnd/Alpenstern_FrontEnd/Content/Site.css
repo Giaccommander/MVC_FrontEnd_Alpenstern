@@ -147,7 +147,6 @@ footer {
 
 /*#endregion */
 
-
 /*#region startseite */
 .panel-splash {
     text-align: center;
@@ -212,7 +211,6 @@ nav ul li a {
 
 /*#endregion */
 
-
 /*#region Appdownload */
 .Content-Appdownload {
     background: url('img/App-Foto/APP-Hintergrund.png') no-repeat;
@@ -256,8 +254,6 @@ nav ul li a {
 }
 
 /* #endregion*/
-/*#endregion */
-
 
 /*#region GameView */
 h2{
@@ -266,7 +262,4 @@ h2{
 .rand{
     border: 2px solid black;
 }
-
-
-
 /*#endregion */
