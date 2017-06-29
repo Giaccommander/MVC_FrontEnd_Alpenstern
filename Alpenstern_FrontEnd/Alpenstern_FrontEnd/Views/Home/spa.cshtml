@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "Spa-Bereich";
+}
+
+<head>
+    <style>
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 50px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+
+        table tr td img {
+            max-width: 250px;
+            padding: 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Willkommen in unserem Spa und Wellnes Bereich</h1>
+        </div>
+        <h2>Hier finden Sie Bilder, die zum geniesen einladen</h2>
+        <br /><br />
+        <table>
+            <tr>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_außen_2.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Caesarium.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Dampfbad.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Eingang_oben.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Eingang_unten.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Emotionarium_2000x750.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Emotionarium_900x60.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Emotionarium_orange.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_innen_1.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Relaxarium_1.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Relaxarium_2.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Ruheraum_1.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Ruheraum_2.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Wuidera_Sauna_2000x750.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Wuidera_Sauna_900x60.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/Content/images/img-hotel/AlpenSpa_Wuidera_Sauna_Aufguss.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/Alpenstern_Fitness_Eingang.jpg" />
+                </td>
+                <td>
+                    <img src="~/Content/images/img-hotel/Alpenstern_Fruehstuecksbuffet.jpg" />
+                </td>
+                <td>
+
+                    <img src="~/Content/images/img-hotel/Alpenstern_Hallenbad_2000x750.jpg" />
+                </td>
+            </tr>
+           
+            
+        </table>
+    </div>
+    <div class="row">
+        <div id="overlay" onclick="off()">
+            <div id="text" class="col-lg-3"><img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="..."></div>
+        </div>
+
+        <div style="padding:20px">
+
+            <img src="~/Content/images/img-hotel/AlpenSpa_außen_1.jpg" alt="..." width="200">
+            <button class="btn-primary btn-lg" onclick="on()">Vollbild</button>
+            
+        </div>
+        <div id="overlay" onclick="off()">
+            <div id="text" class="col-lg-3"><img src="~/Content/images/img-hotel/AlpenSpa_außen_2.jpg" alt="..."></div>
+        </div>
+
+        <div style="padding:20px">
+
+            <img src="~/Content/images/img-hotel/AlpenSpa_außen_2.jpg" alt="..." width="200">
+            <button class="btn-primary btn-lg" onclick="on()">Vollbild</button>
+        </div>
+    </div>
+    <script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+    </script>
+</body>
+
