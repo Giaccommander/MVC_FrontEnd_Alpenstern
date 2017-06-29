@@ -138,6 +138,7 @@ footer {
     bottom: 0px;
     left: 0px;
     right: 0px;
+    font-style: italic;
 }
 
 /*#endregion */
@@ -226,3 +227,7 @@ nav ul li a {
 
 
 /*#endregion */
+
+.carousel{
+    top: 35px;
+}
