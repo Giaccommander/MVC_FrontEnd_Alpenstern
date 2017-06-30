@@ -45,5 +45,9 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
+        public ActionResult geschichte()
+        {
+            return View();
+        }
     }
 }
