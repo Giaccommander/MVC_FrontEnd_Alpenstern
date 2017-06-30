@@ -140,6 +140,7 @@
     <Content Include="Content\images\GameView\letter-d-icon.png" />
     <Content Include="Content\images\%24_35.JPG" />
     <Content Include="Content\images\1484720716-8714-speisekarte3.jpg" />
+    <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_2.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_Caesarium.jpg" />
@@ -166,6 +167,8 @@
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_1.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_2.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Stausee.jpg" />
+    <Content Include="Content\images\img-hotel\hotel-obeschwarzach_kulinarik_1.jpeg" />
+    <Content Include="Content\images\img-hotel\images.jpg" />
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
     <Content Include="Content\img\backcall_icon.png" />
