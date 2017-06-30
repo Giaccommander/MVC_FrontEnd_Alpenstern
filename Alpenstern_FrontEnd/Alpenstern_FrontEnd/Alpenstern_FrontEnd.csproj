@@ -123,6 +123,7 @@
     <Compile Include="Controllers\AppDownloadController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Global.asax.cs">
@@ -310,10 +311,10 @@
       <BrowseToURL>~/Home/spa</BrowseToURL>
     </Content>
     <Content Include="Views\Home\About - Kopieren.cshtml" />
-    <Content Include="Views\Home\kulinarik.cshtml" />
     <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\Kulinarik\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
