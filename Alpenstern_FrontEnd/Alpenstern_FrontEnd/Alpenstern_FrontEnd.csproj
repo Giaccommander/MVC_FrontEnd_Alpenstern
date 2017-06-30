@@ -275,6 +275,10 @@
     <Content Include="Content\AGB\AGBH_tschechisch.pdf" />
     <Content Include="Content\AGB\AGBH_ungarisch.pdf" />
     <Content Include="Content\Impressum\Alpenstern_Impressum.pdf" />
+    <Content Include="fonts\Dancing in the Rainbow.ttf" />
+    <Content Include="fonts\NellaSueDEMO.ttf" />
+    <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
+    <Content Include="fonts\DJ5CTRIAL.ttf" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />

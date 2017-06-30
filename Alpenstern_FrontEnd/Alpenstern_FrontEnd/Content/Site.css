@@ -1,8 +1,31 @@
 ﻿
+/* #region Fonts */
+
 @font-face {
     font-family: 'Marcellus-Regular';
     src: url('../fonts/Marcellus-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Dancing in the Rainbow';
+    src: url('../fonts/Dancing in the Rainbow.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NellaSueDEMO';
+    src: url('../fonts/NellaSueDEMO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KGWaystoSayGoodbye';
+    src: url('../fonts/KGWaystoSayGoodbye.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DJ5CTRIAL';
+    src: url('../fonts/DJ5CTRIAL.ttf') format('truetype');
+}
+
+/* #endregion */
 
 body {
     padding-top: 75px;
@@ -367,5 +390,7 @@ h2{color:#5D4037; font-family: Marcellus-Regular;}
     text-shadow: 0px 1px 5px #5D4037;
     color: #f2ebde;
      padding-top:15px;
+     font-family: DJ5CTRIAL;
 }
+
 /* #endregion */
