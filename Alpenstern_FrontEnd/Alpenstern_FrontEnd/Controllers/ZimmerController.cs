@@ -13,5 +13,9 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
+        public ActionResult einzelzimmer()
+        {
+            return View();
+        }
     }
 }

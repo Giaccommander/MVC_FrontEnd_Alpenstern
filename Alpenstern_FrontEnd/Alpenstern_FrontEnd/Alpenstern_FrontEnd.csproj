@@ -341,6 +341,7 @@
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Home\geschichte.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
+    <Content Include="Views\Zimmer\einzelzimmer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
