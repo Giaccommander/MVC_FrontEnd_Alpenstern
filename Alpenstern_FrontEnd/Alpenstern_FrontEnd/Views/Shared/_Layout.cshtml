@@ -35,9 +35,11 @@
                 <ul class="nav navbar-nav">
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
-                           aria-expanded="false"><img class="navicon" src="~/Content/images/icons/hotel_icon.png" />
-                        Hotel<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <img class="navicon" src="~/Content/images/icons/hotel_icon.png" />
+                            Hotel<span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a href="~/Team">Team</a></li>
                             <li><a href="#">Geschichte</a></li>
@@ -85,11 +87,29 @@
         @RenderBody()
         <hr />
     </div>
-   
+
     <footer class="row">
-        <a class="col-lg-4" href="~/Content/AGB/AGBH_deutsch.pdf">AGB</a>
+        <div class="col-lg-4">
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle btnAgbStyle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AGB</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_deutsch.pdf" target="_blank">Deutsch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_englisch.pdf" target="_blank">Englisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_franzoesisch.pdf" target="_blank">Französisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_italienisch.pdf" target="_blank">Italienisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_daenisch.pdf" target="_blank">Dänisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_niederlaendisch.pdf" target="_blank">Niederländisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_polnisch.pdf" target="_blank">Polnisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_russisch.pdf" target="_blank">Russisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_spanisch.pdf" target="_blank">Spanisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_tschechisch.pdf" target="_blank">Tschechisch</a><br />
+                    <a class="dropdown-item agbFont" href="~/Content/AGB/AGBH_ungarisch.pdf" target="_blank">Ungarisch</a>
+
+                </div>
+            </div>
+        </div>
         <div class="col-lg-4">&copy; @DateTime.Now.Year - Thor IndusTries</div>
-        <div class="col-lg-4">Impressum</div>
+        <a href="~/Content/Impressum/Alpenstern_Impressum.pdf" class="col-lg-4 btni btnImprStyle" target="_blank">Impressum</a>
     </footer>
 
     @Scripts.Render("~/bundles/jquery")

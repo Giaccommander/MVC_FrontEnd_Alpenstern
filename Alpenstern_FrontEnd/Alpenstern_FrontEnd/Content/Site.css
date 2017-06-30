@@ -19,7 +19,7 @@ body {
     margin-right: 10px;
 }
 
-   
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -145,6 +145,21 @@ footer {
     right: 0px;
 }
 
+.agbFont {
+    color: #5D4037;
+    text-decoration: none;
+}
+
+.btnAgbStyle {
+    background-color: white;
+    color: #5D4037;
+    padding-top: 0px;
+}
+
+.btnImprStyle{
+    color: #5D4037;
+}
+
 /*#endregion */
 
 
@@ -242,14 +257,13 @@ nav ul li a {
 }
 
 .team-text {
-    
     font-family: Marcellus-Regular;
     color: #5D4037;
 }
 
 .team-chapter {
     border-bottom: 1px solid #5D4037;
-    padding-top:25px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 

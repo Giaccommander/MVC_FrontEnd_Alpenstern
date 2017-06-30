@@ -163,6 +163,7 @@
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
     <Content Include="Content\img\backcall_icon.png" />
+    <Content Include="Content\img\book.png" />
     <Content Include="Content\img\contact_icon.png" />
     <Content Include="Content\img\coupon_icon.png" />
     <Content Include="Content\img\destination_icon.png" />
@@ -268,6 +269,7 @@
     <Content Include="Content\AGB\AGBH_spanisch.pdf" />
     <Content Include="Content\AGB\AGBH_tschechisch.pdf" />
     <Content Include="Content\AGB\AGBH_ungarisch.pdf" />
+    <Content Include="Content\Impressum\Alpenstern_Impressum.pdf" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
