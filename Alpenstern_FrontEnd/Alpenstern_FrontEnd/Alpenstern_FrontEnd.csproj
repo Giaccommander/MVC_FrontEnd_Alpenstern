@@ -289,7 +289,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\AppDownload\Index.cshtml" />
-    <Content Include="Views\Game\Index.cshtml" />
+    <Content Include="Views\Game\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
