@@ -131,25 +131,6 @@ body, h1 {
     }
 /*#endregion */
 
-/* #region kulinarik */
-
- .imgkul {
-        max-height: 250px;
-        max-width: 250px;
-        padding: 20px 20px 20px 20px;
-    }
-
- h1 {
-     color: #5D4037;
- }
-
-
-/* #endregion */
-
-
-
-
-
 /*#region Footer */
 
 footer {
