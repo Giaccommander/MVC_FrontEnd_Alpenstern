@@ -162,9 +162,12 @@
     <Content Include="Content\images\img-hotel\Alpenstern_Hallenbad_2000x750.jpg" />
     <Content Include="Content\images\img-hotel\Alpenstern_Kulinarik_2000x750.jpg" />
     <Content Include="Content\images\img-hotel\Alpenstern_Kulinarik_900x600.jpg" />
+    <Content Include="Content\images\img-hotel\friseur.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_1.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_2.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Stausee.jpg" />
+    <Content Include="Content\images\img-hotel\kosmetik.png" />
+    <Content Include="Content\images\img-hotel\massage.png" />
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
     <Content Include="Content\img\backcall_icon.png" />

@@ -384,13 +384,26 @@ h2{color:#5D4037; font-family: Marcellus-Regular;}
 .spa_bonus{
     font-family: Marcellus-Regular;
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 .spa_header{
     text-shadow: 0px 1px 5px #5D4037;
     color: #f2ebde;
      padding-top:15px;
      font-family: DJ5CTRIAL;
+     font-size:65px;
 }
+.spa_pic{
+    height:250px;
+    width: 250px;
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 30px;
+}
+.spa_footer{
+    padding-top: 60px;
+}
+
+
+
 
 /* #endregion */
