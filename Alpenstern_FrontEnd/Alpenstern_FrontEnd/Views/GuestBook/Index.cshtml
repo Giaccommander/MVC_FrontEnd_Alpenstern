@@ -4,13 +4,24 @@
 }
 
 <h2 class="gb_ueberschrift">Gästebuch</h2>
+<div class="gb_intro">
+    <strong>
+        Liebe Gäste,<br />
+        wir hoffen Ihr Aufenthalt bei uns im Hotel Alpenstern hat Ihnen gefallen!
+    </strong> <br />
 
-<div class="row">
+    Ihre Meinung und Kritik sind uns wichtig!<br />
+    Daher freuen wir uns über Ihre Anregungen und Wünsche <br />
+    genauso wie über ihre Urlaubsimpressionen und Erlebnisse in unserem Gästebuch<br />
+    und natürlich freuen wir uns auch auf ein Wiedersehen bei uns.
+</div>
+
+<div class="row" style="margin-top:35px;">
     <div class="col-lg-4" style="padding-top:20px;">
         <form action="/" method="post">
             <div class="row">
                 <div class="col-lg-4" style="float:left;">
-                    Vorname
+                    <div class="form_font">Vorname</div>
                 </div>
                 <div class="col-lg-8 gb_form" style="float:left;">
                     <input type="text" name="vname" value="" placeholder="Max"/>
@@ -18,7 +29,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 gb_form gb_form_last" style="float:left;">
-                    Nachname
+                    <div class="form_font">Nachname</div>
                 </div>
                 <div class="col-lg-8" style="float:left;">
                     <input type="text" name="nname" value="" placeholder="Muster" />
@@ -27,8 +38,10 @@
             <div class="row">
                 
                 <div class="col-lg-12">
-                    Geben Sie hier Ihre Nachricht ein
+                    <div class="form_font">Geben Sie hier Ihre Nachricht ein</div>
                     <input id="gb_textarea" type="text" name="eintrag" value=""/>
+
+                    <input type="submit" name="send" value="Abschicken" class="gb_button" />
                 </div>
             </div>
         </form>

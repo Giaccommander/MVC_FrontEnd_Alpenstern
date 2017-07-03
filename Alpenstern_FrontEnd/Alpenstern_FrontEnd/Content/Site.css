@@ -264,7 +264,7 @@ nav ul li a {
 }
 
 #gb_textarea{
-    height: 320px;
+    height: 270.5px;
     width:100%;
     max-width: 287px;
     padding-top: 30px;
@@ -276,7 +276,7 @@ nav ul li a {
 
 .gb_ueberschrift{
     font-family: Marcellus-Regular;
-    padding-bottom: 75px;
+    padding-bottom: 7.5px;
     text-align: center;
     padding-top: 15px;
     font-size: 70px;
@@ -289,8 +289,24 @@ nav ul li a {
     height:700px;
     width:750px;
 }
+.form_font{
+    font-size: 16px;
+    color: #5D4037;
+}
 
+.gb_button{
+    position:center;
+    margin-top: 25px;
+    margin-left: 27.5%;
+}
 
+.gb_intro{
+    font-size:14px;
+    color:#5D4037;
+    text-align: center;
+    padding-bottom:5px;
+    border-bottom: 1px solid #5D4037;
+}
 
 
 /* #endregion */
