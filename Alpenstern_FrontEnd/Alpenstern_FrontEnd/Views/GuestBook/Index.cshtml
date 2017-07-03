@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="gb_ueberschrift">Gästebuch</h2>
+
+<div class="row">
+    <div class="col-lg-4" style="padding-top:20px;">
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col-lg-4" style="float:left;">
+                    Vorname
+                </div>
+                <div class="col-lg-8 gb_form" style="float:left;">
+                    <input type="text" name="vname" value="" placeholder="Max"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 gb_form gb_form_last" style="float:left;">
+                    Nachname
+                </div>
+                <div class="col-lg-8" style="float:left;">
+                    <input type="text" name="nname" value="" placeholder="Muster" />
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-12">
+                    Geben Sie hier Ihre Nachricht ein
+                    <input id="gb_textarea" type="text" name="eintrag" value=""/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-8 guestbook">
+
+
+    </div>
+</div>

@@ -256,3 +256,41 @@ nav ul li a {
 }
 
 /* #endregion*/
+
+/* #region GuestBook*/
+
+.gb_form{
+    padding-bottom: 15px;
+}
+
+#gb_textarea{
+    height: 320px;
+    width:100%;
+    max-width: 287px;
+    padding-top: 30px;
+}
+
+.gb_form_last{
+    padding-bottom: 50px;
+}
+
+.gb_ueberschrift{
+    font-family: Marcellus-Regular;
+    padding-bottom: 75px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 70px;
+    text-shadow: -3px 3px 10px #5D4037;
+    color: #ffffff;
+}
+
+.guestbook {
+    background: url('images/guestbook.png') no-repeat;
+    height:700px;
+    width:750px;
+}
+
+
+
+
+/* #endregion */
