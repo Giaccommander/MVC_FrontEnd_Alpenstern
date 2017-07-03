@@ -301,12 +301,29 @@ nav ul li a {
 
 /* #endregion*/
 
-/*#region GameView */
-h2 {
-    padding-top: 50px;
+/* #region history */
+
+.imgHist {
+    border: solid 2px #5d4037;
+    border-radius: 10px;
+  
+    padding-left:0px;
+    padding-right:0px;
 }
 
-.rand {
-    border: 2px solid black;
+.imgHist *
+{
+    border-radius: inherit;
 }
-/*#endregion */
+
+.histHeader {
+    text-align:center;
+    font-family: 'Marcellus-Regular';
+    color: #5D4037;
+    margin-top: 50px;
+}
+
+
+
+
+/* #endregion */
