@@ -1,8 +1,31 @@
 ﻿
+/* #region Fonts */
+
 @font-face {
     font-family: 'Marcellus-Regular';
     src: url('../fonts/Marcellus-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Dancing in the Rainbow';
+    src: url('../fonts/Dancing in the Rainbow.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NellaSueDEMO';
+    src: url('../fonts/NellaSueDEMO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KGWaystoSayGoodbye';
+    src: url('../fonts/KGWaystoSayGoodbye.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DJ5CTRIAL';
+    src: url('../fonts/DJ5CTRIAL.ttf') format('truetype');
+}
+
+/* #endregion */
 
 body {
     padding-top: 75px;
@@ -339,6 +362,109 @@ nav ul li a {
     font-family: 'Marcellus-Regular';
     color: #5D4037;
     margin-top: 50px;
+}
+/*#endregion */
+
+/* #region Spa & Wellness */
+
+.blogShort{ border-bottom:1px solid #5D4037;}
+.add{background: #5D4037; padding: 10%; height: 300px;}
+
+.nav-sidebar { 
+    width: 100%;
+    padding: 30px 0; 
+    border-right: 1px solid black;
+}
+.nav-sidebar a {
+    color: #5D4037;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+}
+.nav-sidebar .active a { 
+    cursor: default;
+    background-color: #5D4037; 
+    color: #fff; 
+}
+.nav-sidebar .active a:hover {
+    background-color:#5D4037;   
+}
+.nav-sidebar .text-overflow a,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+
+.btn-blog {
+    color: #ffffff;
+    background-color: #5D4037;
+    border-color: #E50000;
+    border-radius:0;
+    margin-bottom:10px
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: #5D4037;
+    background-color:#5D4037;
+    border-color: #0b56a8;
+}
+article h2{color:#5D4037; font-family:Marcellus-Regular;}
+h2{color:#5D4037; font-family: Marcellus-Regular;}
+ .margin10{margin-bottom:10px; margin-right:10px;}
+ 
+ .container .text-style
+{
+     font-family: Marcellus-Regular;
+  text-align: justify;
+  line-height: 23px;
+  margin: 0 13px 0 0;
+  font-size: 19px;
+}
+
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #5D4037;
+}
+
+.spa_head{
+    padding-top:15px;
+    border-bottom: 1px solid black;
+}
+
+.spa_menu{
+    padding-top:50px;
+}
+.spa_text{
+    font-family: Marcellus-Regular;
+    font-size: 16px;
+    padding-bottom:3px;
+}
+.spa_bonus{
+    font-family: Marcellus-Regular;
+    font-size: 20px;
+    padding-top: 35px;
+}
+.spa_header{
+    text-shadow: 0px 1px 5px #5D4037;
+    color: #f2ebde;
+     padding-top:15px;
+     font-family: DJ5CTRIAL;
+     font-size:65px;
+}
+.spa_pic{
+    height:250px;
+    width: 250px;
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 10px;
+}
+.spa_footer{
+    padding-top: 60px;
 }
 
 
