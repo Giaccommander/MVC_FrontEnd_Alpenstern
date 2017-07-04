@@ -277,3 +277,15 @@ h2{
     border: 2px solid black;
 }
 /*#endregion */
+
+/*region Zimmer*/
+.zimmer
+{
+	margin-top: 20px;
+}
+
+.zimmer img
+{
+	max-width: 300px;
+}
+/*endregion*/
