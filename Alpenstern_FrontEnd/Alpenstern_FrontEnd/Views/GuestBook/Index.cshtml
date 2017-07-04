@@ -17,9 +17,9 @@
 </div>
 
 <div class="row" style="margin-top:35px;">
-    <div class="col-lg-4" style="padding-top:20px;">
+    <div class="col-md-4" style="padding-top:20px;">
         <form action="/" method="post">
-            <div class="row">
+            @*<div class="row">
                 <div class="col-lg-4" style="float:left;">
                     <div class="form_font">Vorname</div>
                 </div>
@@ -43,10 +43,87 @@
 
                     <input type="submit" name="send" value="Abschicken" class="gb_button" />
                 </div>
+            </div>*@
+                <div class="form-group">
+                    <label for="vname">Vorname</label>
+                    <input type="text" class="form-control" id="vname" placeholder="Max">
+                </div>
+                <div class="form-group">
+                    <label for="nname">Nachname</label>
+                    <input type="text" class="form-control" id="nname" placeholder="Muster">
+                </div>
+            <div class="form-group">
+                <label for="gb_message">Nachricht:</label>
+                <textarea class="form-control" rows="5" id="gb_message" placeholder="Geben Sie hier Ihre Nachricht ein..."></textarea>
             </div>
-        </form>
+            <button type="submit" class="btn btn-default">Absenden</button>
+            </form>
     </div>
-    <div class="col-lg-8 guestbook">
+    <div class="col-md-8 guestbook">
+
+
+
+        <section class="section-white">
+            <div class="container">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-lg-6 gb_text gb_name">
+                                    Vorname <br/>
+                                    Nachname
+                                </div>
+                                <div class="col-lg-6 gb_text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-6 gb_text gb_name">
+                                    Vorname <br />
+                                    Nachname
+                                </div>
+                                <div class="col-lg-6 gb_text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-6 gb_text gb_name">
+                                    Vorname <br />
+                                    Nachname
+                                </div>
+                                <div class="col-lg-6 gb_text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    
+                </div>
+            </div>
+        </section>
+
 
 
     </div>
