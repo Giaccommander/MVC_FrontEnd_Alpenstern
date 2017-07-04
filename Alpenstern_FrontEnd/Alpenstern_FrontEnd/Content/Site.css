@@ -271,6 +271,11 @@ footer {
     max-height: 55px;
 }
 
+.navbar-default{
+    box-shadow: 0 0 20px black;
+    background-color: white;
+}
+
 .navicon {
     height: 25px;
     width: 25px;
@@ -291,6 +296,13 @@ nav ul li a {
 
 .navbar-default .navbar-nav > li > a {
     color: #5D4037;
+    
+    text-shadow: -4px 3px 8px #ccc;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color:#f2ebde;;
+    color:#5D4037;
 }
 
 
@@ -426,46 +438,11 @@ nav ul li a {
   height: auto;
 }
 
-/* ------------------- Carousel Styling ------------------- */
-
-.carousel-inner {
-  border-radius: 15px;
-  margin-top: 15%;
-}
-
-.carousel-caption {
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
-}
-
-.carousel-indicators {
-  position: inherit;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 15;
-  margin: 0;
-  padding: 0 25px 25px 0;
-  text-align: right;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
 
 
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
 
-.section-white {
+.gb_section-white {
    padding: 10px 0;
    height: 485px;
     width: 560px;
@@ -473,14 +450,14 @@ nav ul li a {
     margin-left: 8%;
 }
 
-.section-white {
+.gb_section-white {
   background-color: transparent;
   color: #555;
 }
 
 @media screen and (min-width: 768px) {
 
-  .section-white {
+  .gb_section-white {
      padding: 1.5em 0;
   }
 
@@ -488,14 +465,13 @@ nav ul li a {
 
 @media screen and (min-width: 992px) {
 
-  .container {
+  .gb_container {
     max-width: 930px;
   }
 
 }
 
 
-/* #endregion */
 /* #endregion*/
 
 /* #region history */
