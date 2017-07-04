@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppDownloadController.cs" />
     <Compile Include="Controllers\GameController.cs" />
+    <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -141,6 +142,7 @@
     <Content Include="Content\images\GameView\letter-d-icon.png" />
     <Content Include="Content\images\%24_35.JPG" />
     <Content Include="Content\images\1484720716-8714-speisekarte3.jpg" />
+    <Content Include="Content\images\guestbook.png" />
     <Content Include="Content\images\history\Folie1.PNG" />
     <Content Include="Content\images\history\Folie2.PNG" />
     <Content Include="Content\images\history\Folie3.PNG" />
@@ -315,6 +317,7 @@
     <Content Include="fonts\NellaSueDEMO.ttf" />
     <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
     <Content Include="fonts\DJ5CTRIAL.ttf" />
+    <Content Include="fonts\Always In My Heart.ttf" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
@@ -356,6 +359,7 @@
     <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\Home\geschichte.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
