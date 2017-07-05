@@ -124,6 +124,7 @@
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HotelumgebungController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\3DGallery.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\GameView\arrow-left-icon.png" />
@@ -150,6 +152,11 @@
     <Content Include="Content\images\history\Folie5.PNG" />
     <Content Include="Content\images\history\Folie6.PNG" />
     <Content Include="Content\images\history\Folie7.PNG" />
+    <Content Include="Content\images\img-hotel\7.jpg" />
+    <Content Include="Content\images\img-hotel\austria-547820_960_720.jpg" />
+    <Content Include="Content\images\img-hotel\Bergkapelle.jpg" />
+    <Content Include="Content\images\img-hotel\fockenstein.jpg" />
+    <Content Include="Content\images\img-hotel\Hindergrund.jpg" />
     <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_2.jpg" />
@@ -357,13 +364,13 @@
       <BrowseToURL>~/Home/spa</BrowseToURL>
     </Content>
     <Content Include="Views\Home\About - Kopieren.cshtml" />
-    <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\Home\geschichte.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
+    <Content Include="Views\Hotelumgebung\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
