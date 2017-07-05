@@ -250,6 +250,13 @@ footer {
     color: azure;
 }
 
+.start_carousel{
+        margin-top:12px; 
+        border: solid 0.5px #5D4037;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+
 @media (min-width: 767px) /*sm*/
 {
     .panel-splash {
@@ -415,11 +422,13 @@ nav ul li a {
     text-align:center;
     font-family: 'Always In My Heart';
     font-size: 20px;
+    color:navy;
 }
 
 .gb_name{
     font-size:32px;
     font-weight: bold;
+    color: navy;
 }
 
 
