@@ -20,24 +20,7 @@ function showPassword() {
 // #endregion
 
 // #region Game
-$(document).ready(function () {
 
-    $('#bonus1').click(function () {
-        $('#bonustabelle1').css('background-color', 'green')
-    });
-
-    $('#bonus2').click(function () {
-        $('#bonustabelle2').css('background-color', 'green')
-    });
-
-    $('#bonus3').click(function () {
-        $('#bonustabelle3').css('background-color', 'green')
-    });
-
-    $('#megabonus').click(function () {
-        $('#megabonustabelle').css('background-color', 'green')
-    });
-});
 
 
 // #endregion
