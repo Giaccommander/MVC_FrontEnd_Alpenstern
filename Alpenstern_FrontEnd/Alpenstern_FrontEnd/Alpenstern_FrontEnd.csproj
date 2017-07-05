@@ -343,6 +343,12 @@
     <Content Include="Views\Zimmer\Index_old.cshtml" />
     <Content Include="Views\Zimmer\einzelzimmer.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
+    <Content Include="Views\Zimmer\kEinzelzimmer.cshtml" />
+    <Content Include="Views\Zimmer\Juniorsuite.cshtml" />
+    <Content Include="Views\Zimmer\SuiteTirol.cshtml" />
+    <Content Include="Views\Zimmer\Zirbensuite.cshtml" />
+    <Content Include="Views\Zimmer\Gletschersuite.cshtml" />
+    <Content Include="Views\Zimmer\SuiteAlpenstern.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
