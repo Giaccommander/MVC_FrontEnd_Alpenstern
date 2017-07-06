@@ -8,6 +8,7 @@ namespace Alpenstern_FrontEnd.Controllers
 {
     public class KulinarikController : Controller
     {
+        //test//
         // GET: Kulinarik
         public ActionResult Index()
         {

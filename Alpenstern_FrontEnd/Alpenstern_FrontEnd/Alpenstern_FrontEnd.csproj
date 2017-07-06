@@ -124,6 +124,7 @@
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\HotelumgebungController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -158,6 +159,14 @@
     <Content Include="Content\images\img-hotel\fockenstein.jpg" />
     <Content Include="Content\images\img-hotel\Hindergrund.jpg" />
     <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
+    <Content Include="Content\images\history\Folie1.PNG" />
+    <Content Include="Content\images\history\Folie2.PNG" />
+    <Content Include="Content\images\history\Folie3.PNG" />
+    <Content Include="Content\images\history\Folie4.PNG" />
+    <Content Include="Content\images\history\Folie5.PNG" />
+    <Content Include="Content\images\history\Folie6.PNG" />
+    <Content Include="Content\images\history\Folie7.PNG" />
+    <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_2.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_Caesarium.jpg" />
@@ -185,6 +194,29 @@
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_1.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Gletscher_2.jpg" />
     <Content Include="Content\images\img-hotel\Hinterberger_Stausee.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_2000x750.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_900x600.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komfort Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Gang.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Schlafzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Wohnbereich.jpg" />
+    <Content Include="Content\images\img-hotel\hotel-obeschwarzach_kulinarik_1.jpeg" />
+    <Content Include="Content\images\img-hotel\images.jpg" />
     <Content Include="Content\images\img-zimmer\Alpensternsuite_Badezimmer.jpg" />
     <Content Include="Content\images\img-zimmer\Alpensternsuite_Skizze.jpg" />
     <Content Include="Content\images\img-zimmer\Alpensternsuite_Wohnraum.jpg" />
@@ -326,6 +358,7 @@
     <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
     <Content Include="fonts\DJ5CTRIAL.ttf" />
     <Content Include="fonts\Always In My Heart.ttf" />
+    <None Include="Properties\PublishProfiles\123.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
@@ -364,8 +397,12 @@
       <BrowseToURL>~/Home/spa</BrowseToURL>
     </Content>
     <Content Include="Views\Home\About - Kopieren.cshtml" />
+    <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\Home\geschichte.cshtml" />
+    <Content Include="Views\Zimmer\Index.cshtml" />
+    <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\Home\geschichte.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
