@@ -284,6 +284,7 @@ h2{
 	margin-top: 20px;
     max-width: 350px;
     min-height: 234px;
+    max-height:235px;
     border: solid 2px #5d4037;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.50)15px 15px 15px;
@@ -305,11 +306,24 @@ h2{
     font-size:18px;
 }
 .zimmercontainer{
-    margin-top:65px;
+    margin-top:45px;
 }
 .zimmertextklein{
+    margin-left: 15px;
+    margin-top: 20px;
      font-family: Marcellus-Regular;
     color: #5D4037;
     margin-bottom:20px;   
+}
+
+.zimmerliste{
+    padding-top: 25px;
+    padding-left: 55px;
+}
+.z_starttext{
+    border-bottom: 1.5px solid white;
+     height:75px;
+     margin-bottom:15px;
+     text-align:center;
 }
 /*endregion*/
