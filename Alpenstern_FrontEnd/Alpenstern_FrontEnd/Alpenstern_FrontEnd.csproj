@@ -122,7 +122,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppDownloadController.cs" />
     <Compile Include="Controllers\GameController.cs" />
+    <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KulinarikController.cs" />
+    <Compile Include="Controllers\HotelumgebungController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
@@ -133,6 +136,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\3DGallery.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\GameView\arrow-left-icon.png" />
@@ -141,6 +145,20 @@
     <Content Include="Content\images\GameView\letter-d-icon.png" />
     <Content Include="Content\images\%24_35.JPG" />
     <Content Include="Content\images\1484720716-8714-speisekarte3.jpg" />
+    <Content Include="Content\images\guestbook.png" />
+    <Content Include="Content\images\history\Folie1.PNG" />
+    <Content Include="Content\images\history\Folie2.PNG" />
+    <Content Include="Content\images\history\Folie3.PNG" />
+    <Content Include="Content\images\history\Folie4.PNG" />
+    <Content Include="Content\images\history\Folie5.PNG" />
+    <Content Include="Content\images\history\Folie6.PNG" />
+    <Content Include="Content\images\history\Folie7.PNG" />
+    <Content Include="Content\images\img-hotel\7.jpg" />
+    <Content Include="Content\images\img-hotel\austria-547820_960_720.jpg" />
+    <Content Include="Content\images\img-hotel\Bergkapelle.jpg" />
+    <Content Include="Content\images\img-hotel\fockenstein.jpg" />
+    <Content Include="Content\images\img-hotel\Hindergrund.jpg" />
+    <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
     <Content Include="Content\images\history\Folie1.PNG" />
     <Content Include="Content\images\history\Folie2.PNG" />
     <Content Include="Content\images\history\Folie3.PNG" />
@@ -199,6 +217,32 @@
     <Content Include="Content\images\img-zimmer\Zirbensuite_Wohnbereich.jpg" />
     <Content Include="Content\images\img-hotel\hotel-obeschwarzach_kulinarik_1.jpeg" />
     <Content Include="Content\images\img-hotel\images.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_2000x750.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_900x600.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komfort Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Gang.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Schlafzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Wohnbereich.jpg" />
+    <Content Include="Content\images\img-hotel\hotel-obeschwarzach_kulinarik_1.jpeg" />
+    <Content Include="Content\images\img-hotel\images.jpg" />
+    <Content Include="Content\images\img-hotel\kosmetik.png" />
+    <Content Include="Content\images\img-hotel\massage.png" />
+    <Content Include="Content\images\rückruf\phone-call.jpeg" />
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
     <Content Include="Content\img\backcall_icon.png" />
@@ -313,6 +357,7 @@
     <Content Include="fonts\NellaSueDEMO.ttf" />
     <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
     <Content Include="fonts\DJ5CTRIAL.ttf" />
+    <Content Include="fonts\Always In My Heart.ttf" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
@@ -357,6 +402,11 @@
     <Content Include="Views\Home\geschichte.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
+    <Content Include="Views\GuestBook\Index.cshtml" />
+    <Content Include="Views\Home\geschichte.cshtml" />
+    <Content Include="Views\Zimmer\Index.cshtml" />
+    <Content Include="Views\Kulinarik\Index.cshtml" />
+    <Content Include="Views\Hotelumgebung\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
