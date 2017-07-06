@@ -203,6 +203,7 @@
     <Content Include="Content\images\img-hotel\images.jpg" />
     <Content Include="Content\images\img-hotel\kosmetik.png" />
     <Content Include="Content\images\img-hotel\massage.png" />
+    <Content Include="Content\images\map.png" />
     <Content Include="Content\images\rückruf\phone-call.jpeg" />
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
@@ -364,6 +365,7 @@
     <Content Include="Views\Home\geschichte.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
+    <Content Include="Views\Home\Anreise.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
