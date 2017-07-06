@@ -47,9 +47,9 @@ body {
 
 [class*='large-'] {
     background: #5d4037;
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 15px;
     display: none;
 }
 
@@ -82,7 +82,7 @@ body {
     font-size: 50px;
     position: absolute;
     top: 289px;
-    right: 199px;
+    right: 275px;
     float: right;
     cursor: zoom-out;
 }
