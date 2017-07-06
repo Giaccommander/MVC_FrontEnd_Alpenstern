@@ -26,12 +26,13 @@
     src: url('../fonts/DJ5CTRIAL.ttf') format('truetype');
 }
 
-/* #endregion */
-
 @font-face {
     font-family: 'Always In My Heart';
     src: url('../fonts/Always In My Heart.ttf') format('truetype');
 }
+/* #endregion */
+
+
 
 body {
     padding-top: 75px;
@@ -181,6 +182,56 @@ body, h1 {
         color: #f2ebde;
     }
 /*#endregion */
+
+/* #region kulinarik*/
+
+.imgkul {
+    max-height: 250px;
+    max-width: 250px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: inset 0px 0px 12px 1px #5D4037;
+}
+
+
+.ueberschrift{
+    padding-top: 35px;
+    padding-bottom:80px; 
+    color: #5D4037;
+}
+
+.textStyle{
+    text-align: left;
+    color: #5D4037;
+    font-size: 16px;
+
+}
+
+.time{
+    font-weight: bold;
+    text-align:center;
+    color:#5D4037; 
+    font-size: 22px;
+}
+
+.pMA{
+    text-align:center;
+    font-size: 22px;
+    color:#5D4037;
+    font-weight:bold;
+}
+
+.h3Kulinarik{
+
+    font-family: Marcellus-Regular;
+    color: #5D4037;
+    text-align:center;
+}
+
+#color{
+    color:#5D4037;
+}
+
+/* #endregion */
 
 /* #region kulinarik*/
 
@@ -345,11 +396,11 @@ nav ul li a {
     border-color: #5D4037;
 }
 
-.navbar-default .navbar-toggle .icon-bar{
-    background-color:#5D4037;
-}
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #5D4037;
+    }
 
-.navbar-toggle{
+.navbar-toggle {
     margin-top: 25px;
 }
 
@@ -491,7 +542,26 @@ nav ul li a {
     width: 560px;
     position: center;
     margin-left: 8%;
+/* #region history */
+
+.imgHist {
+    border: solid 2px #5d4037;
+    border-radius: 10px;
+  
+    padding-left:0px;
+    padding-right:0px;
 }
+
+.imgHist *
+{
+    border-radius: inherit;
+}
+
+.histHeader {
+    text-align:center;
+    font-family: 'Marcellus-Regular';
+    color: #5D4037;
+    margin-top: 50px;
 
 .gb_section-white {
     background-color: transparent;
@@ -671,6 +741,49 @@ h2 {
 
 /* #endregion */
 
+/* #region hotelumgebung */
+
+/*--------------- 3DGallery------------*/
+
+
+
+
+/*#endregion*/
+
+
+
+.hotelumg_item {
+    max-height: 70%;
+    max-width: 70%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 15%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    opacity: 0.5;
+}
+
+    .carousel-control.right {
+        right: 15px;
+    }
+
+
+.header_h3 {
+    margin-top: 50px;
+    font: Marcellus-Regular;
+    color: #5D4037;
+}
+
+
+/* #endregion */
+
 
 
 /*-------Regelt die Umstellung von Navbar auf Burgermenue bei 1000px----------- */
@@ -678,26 +791,31 @@ h2 {
     .navbar-header {
         float: none;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
+
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin: 7.5px -15px;
     }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
 
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+}
