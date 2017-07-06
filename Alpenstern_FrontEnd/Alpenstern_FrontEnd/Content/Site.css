@@ -307,4 +307,9 @@ h2{
 .zimmercontainer{
     margin-top:65px;
 }
+.zimmertextklein{
+     font-family: Marcellus-Regular;
+    color: #5D4037;
+    margin-bottom:20px;   
+}
 /*endregion*/
