@@ -399,11 +399,11 @@
     <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
-    <Content Include="Views\Home\geschichte.cshtml" />
-    <Content Include="Views\Zimmer\Index.cshtml" />
-    <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\Hotelumgebung\Index.cshtml" />
+    <Content Include="Views\Home\geschichte.cshtml" />
+    <Content Include="Views\Kulinarik\Index.cshtml" />
+    <Content Include="Views\Zimmer\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
