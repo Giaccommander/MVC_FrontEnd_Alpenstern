@@ -124,7 +124,6 @@
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\HotelumgebungController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -404,9 +403,6 @@
     <Content Include="Views\Zimmer\Index.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
-    <Content Include="Views\Home\geschichte.cshtml" />
-    <Content Include="Views\Zimmer\Index.cshtml" />
-    <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\Hotelumgebung\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
