@@ -207,6 +207,7 @@
     <Content Include="Content\images\img-zimmer\Komfort Einzelzimmer_Skizze.jpg" />
     <Content Include="Content\images\img-zimmer\Komforteinzelzimmer.jpg" />
     <Content Include="Content\images\img-zimmer\Komforteinzelzimmer_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\logo_transparent.png" />
     <Content Include="Content\images\img-zimmer\Suite Tirol_Gang.jpg" />
     <Content Include="Content\images\img-zimmer\Suite Tirol_Skizze.jpg" />
     <Content Include="Content\images\img-zimmer\Suite Tirol_Wohnraum.jpg" />
@@ -402,6 +403,15 @@
     <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\Hotelumgebung\Index.cshtml" />
     <Content Include="Views\Home\geschichte.cshtml" />
+    <Content Include="Views\Zimmer\Index_old.cshtml" />
+    <Content Include="Views\Zimmer\einzelzimmer.cshtml" />
+    <Content Include="Views\Zimmer\Index.cshtml" />
+    <Content Include="Views\Zimmer\kEinzelzimmer.cshtml" />
+    <Content Include="Views\Zimmer\Juniorsuite.cshtml" />
+    <Content Include="Views\Zimmer\SuiteTirol.cshtml" />
+    <Content Include="Views\Zimmer\Zirbensuite.cshtml" />
+    <Content Include="Views\Zimmer\Gletschersuite.cshtml" />
+    <Content Include="Views\Zimmer\SuiteAlpenstern.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\Zimmer\index.cshtml" />
   </ItemGroup>
