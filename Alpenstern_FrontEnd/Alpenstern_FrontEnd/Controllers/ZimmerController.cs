@@ -41,5 +41,17 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
+        public ActionResult Buchung2()
+        {
+            return View();
+        }
+        public ActionResult Buchung3()
+        {
+            return View();
+        }
+        public ActionResult Buchung4()
+        {
+            return View();
+        }
     }
 }

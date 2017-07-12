@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Buchung3";
+}
+
+<form action="/" method="post">
+
+    <h2 class="buchung_title">
+        Zahlungsart:
+    </h2>
+
+    
+        <div class="row ">
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row buchung_chapter">
+            <div class="col-md-6">
+                <input type="radio" name="zahl" value="Kredit" /> Kreditkarte<br /><br />
+                <input type="radio" name="zahl" value="ueberweisung" /> Überweisung<br /><br />
+                <input type="radio" name="zahl" value="bar" /> Barzahlung vor Ort<br /><br />
+            </div>
+        </div>
+    <h2 class="buchung_title">Wünsche:</h2>
+    <div class="row">
+        <div class="col-md-1">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="checkbox" name="wunsch" value="Parkplatz" /> Parkplatz<br /><br />
+            <input type="checkbox" name="wunsch" value="Spät-Abreise" /> Spät-Abreise<br /><br />
+            <input type="checkbox" name="wunsch" value="Früh-Anreise" /> Früh-Anreise<br /><br />
+            <input type="checkbox" name="wunsch" value="Haustier" /> Haustier<br /><br />
+                </div>
+        <div class="col-md-6">
+            Sonstige Wünsche<br />
+            <textarea rows="10"></textarea>
+        </div>
+        
+    </div>
+    
+    <a href="Buchung4">Absenden</a>
+</form>

@@ -416,6 +416,9 @@
     <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\Home\Anreise.cshtml" />
     <Content Include="Views\Zimmer\index.cshtml" />
+    <Content Include="Views\Zimmer\Buchung2.cshtml" />
+    <Content Include="Views\Zimmer\Buchung3.cshtml" />
+    <Content Include="Views\Zimmer\Buchung4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
