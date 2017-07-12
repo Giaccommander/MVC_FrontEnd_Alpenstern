@@ -542,6 +542,7 @@ nav ul li a {
     width: 560px;
     position: center;
     margin-left: 8%;
+}
 /* #region history */
 
 .imgHist {
@@ -558,11 +559,11 @@ nav ul li a {
 }
 
 .histHeader {
-    text-align:center;
+    text-align: center;
     font-family: 'Marcellus-Regular';
     color: #5D4037;
     margin-top: 50px;
-
+}
 .gb_section-white {
     background-color: transparent;
     color: #555;
