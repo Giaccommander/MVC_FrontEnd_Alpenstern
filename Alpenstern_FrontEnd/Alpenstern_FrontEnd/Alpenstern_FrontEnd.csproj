@@ -358,7 +358,6 @@
     <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
     <Content Include="fonts\DJ5CTRIAL.ttf" />
     <Content Include="fonts\Always In My Heart.ttf" />
-    <None Include="Properties\PublishProfiles\123.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
@@ -412,6 +411,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
