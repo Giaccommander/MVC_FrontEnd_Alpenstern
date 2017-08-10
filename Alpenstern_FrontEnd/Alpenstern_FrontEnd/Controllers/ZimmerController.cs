@@ -13,5 +13,45 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
+        public ActionResult einzelzimmer()
+        {
+            return View();
+        }
+        public ActionResult kEinzelzimmer()
+        {
+            return View();
+        }
+        public ActionResult Juniorsuite()
+        {
+            return View();
+        }
+        public ActionResult SuiteTirol()
+        {
+            return View();
+        }
+        public ActionResult Zirbensuite()
+        {
+            return View();
+        }
+        public ActionResult Gletschersuite()
+        {
+            return View();
+        }
+        public ActionResult SuiteAlpenstern()
+        {
+            return View();
+        }
+        public ActionResult Buchung2()
+        {
+            return View();
+        }
+        public ActionResult Buchung3()
+        {
+            return View();
+        }
+        public ActionResult Buchung4()
+        {
+            return View();
+        }
     }
 }

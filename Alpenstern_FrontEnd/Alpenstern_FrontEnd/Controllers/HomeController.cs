@@ -49,5 +49,9 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
+        public ActionResult Anreise()
+        {
+            return View();
+        }
     }
 }
