@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f3e64995391745c481b351bd645a6096" Name="Diagram1">
+        <EntityTypeShape EntityType="alpenstern_babicModel.Anfrage" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Ausstattung" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Bilder" Width="1.5" PointX="9.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Gast" Width="1.5" PointX="1.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Gastlogin" Width="1.5" PointX="10" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Kategorie" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Kategorieanfrage" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Kategorieausstattung" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Komplettbuchung" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Komplettpaket" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Land" Width="1.5" PointX="1.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Login" Width="1.5" PointX="7.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Mitarbeiter" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Rueckruf" Width="1.5" PointX="11.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Saison" Width="1.5" PointX="12.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Spiel" Width="1.5" PointX="10" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Stadt" Width="1.5" PointX="1.5" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Zimmer" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="alpenstern_babicModel.Zimmerbuchung" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Anfrage_Gast" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Kategorieanfrage_Anfrage" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Kategorieausstattung_Ausstattung" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Gast_Stadt" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Gastlogin_Gast" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Gastlogin_login" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Kategoireausstattung_Kategorie" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Kategorieanfrage_Kategorie" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Zimmer_Kategorie" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Komplettbuchung_Kategorieanfrage" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Zimmerbuchung_Kategorieanfrage" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Komplettbuchung_Komplettpaket" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Stadt_Land" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Spiel_Login" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Zimmerbuchung_Mitarbeiter" ManuallyRouted="false" />
+        <AssociationConnector Association="alpenstern_babicModel.fk_Zimmerbuchung_Zimmer" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
