@@ -10,17 +10,17 @@ using Alpenstern_FrontEnd.Models;
 
 namespace Alpenstern_FrontEnd.Controllers
 {
-    public class vorlage_LoginsController : Controller
+    public class Vorlage_LoginController : Controller
     {
-        private alpenstern_babicEntities db = new alpenstern_babicEntities();
+        private alpensternEntities db = new alpensternEntities();
 
-        // GET: vorlage_Logins
+        // GET: Vorlage_Login
         public ActionResult Index()
         {
             return View(db.Login.ToList());
         }
 
-        // GET: vorlage_Logins/Details/5
+        // GET: Vorlage_Login/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace Alpenstern_FrontEnd.Controllers
             return View(login);
         }
 
-        // GET: vorlage_Logins/Create
+        // GET: Vorlage_Login/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: vorlage_Logins/Create
+        // POST: Vorlage_Login/Create
         // Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace Alpenstern_FrontEnd.Controllers
             return View(login);
         }
 
-        // GET: vorlage_Logins/Edit/5
+        // GET: Vorlage_Login/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace Alpenstern_FrontEnd.Controllers
             return View(login);
         }
 
-        // POST: vorlage_Logins/Edit/5
+        // POST: Vorlage_Login/Edit/5
         // Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace Alpenstern_FrontEnd.Controllers
             return View(login);
         }
 
-        // GET: vorlage_Logins/Delete/5
+        // GET: Vorlage_Login/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace Alpenstern_FrontEnd.Controllers
             return View(login);
         }
 
-        // POST: vorlage_Logins/Delete/5
+        // POST: Vorlage_Login/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

@@ -18,13 +18,20 @@ namespace Alpenstern_FrontEnd.Models
         public Anfrage()
         {
             this.Kategorieanfrage = new HashSet<Kategorieanfrage>();
+            this.Rechnung = new HashSet<Rechnung>();
         }
     
         public int id { get; set; }
         public int gast_id { get; set; }
+        public System.DateTime datumVon { get; set; }
+        public System.DateTime datumBis { get; set; }
+        public System.DateTime datumAnfrage { get; set; }
+        public Nullable<System.DateTime> datumBearbeitet { get; set; }
     
         public virtual Gast Gast { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Kategorieanfrage> Kategorieanfrage { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rechnung> Rechnung { get; set; }
     }
 }

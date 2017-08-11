@@ -12,11 +12,15 @@ namespace Alpenstern_FrontEnd.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Spiel
+    public partial class Rechnung
     {
         public int id { get; set; }
-        public int login_id { get; set; }
+        public int anfrage_id { get; set; }
+        public decimal gesamtpreis { get; set; }
+        public byte anzahlPersonen { get; set; }
+        public byte anzahlNaechte { get; set; }
+        public System.DateTime datumAktualisiert { get; set; }
     
-        public virtual Login Login { get; set; }
+        public virtual Anfrage Anfrage { get; set; }
     }
 }

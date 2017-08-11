@@ -18,7 +18,6 @@ namespace Alpenstern_FrontEnd.Models
         public Login()
         {
             this.Gastlogin = new HashSet<Gastlogin>();
-            this.Spiel = new HashSet<Spiel>();
         }
     
         public int id { get; set; }
@@ -27,7 +26,5 @@ namespace Alpenstern_FrontEnd.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Gastlogin> Gastlogin { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Spiel> Spiel { get; set; }
     }
 }
