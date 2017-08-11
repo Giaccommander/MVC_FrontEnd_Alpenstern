@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Buchung2";
+}
+
+<form action="/" method="post">
+
+    <h2 class="buchung_title">
+        Geben Sie bitte folgende Daten ein:
+    </h2>
+
+    <div class="table-responsive">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>Vorname: </td>
+                    <td><input type="text" name="vname" value="" placeholder="Max"/></td>
+                </tr>
+                <tr>
+                    <td>Nachname: </td>
+                    <td><input type="text" name="nname" value="" placeholder="Muster" /></td>
+                </tr>
+                <tr>
+                    <td>Straße / Hausnummer: </td>
+                    <td><input type="text" name="street" value="" placeholder="Mustergasse 14/2" /></td>
+                </tr>
+                <tr>
+                    <td>Postleitzahl: </td>
+                    <td><input type="text" name="plz" value="" placeholder="1234" /></td>
+                </tr>
+                <tr>
+                    <td>Ort: </td>
+                    <td><input type="text" name="ort" value="" placeholder="Stadt" /></td>
+                </tr>
+                <tr>
+                    <td>Land: </td>
+                    <td><input type="text" name="land" value="" placeholder="Österreich" /></td>
+                </tr>
+                <tr>
+                    <td>E-Mail: </td>
+                    <td><input type="text" name="email" value="" placeholder="max.muster@alpenstern.at" /></td>
+                </tr>
+                <tr>
+                    <td>Telefonnummer: </td>
+                    <td><input type="text" name="tel" value="" placeholder="0660123456789" /></td>
+                </tr>
+                <tr>
+                    <td>Reisepassnummer: </td>
+                    <td><input type="text" name="rnr" value="" placeholder="AT-4487X1" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="checkbox" name="sign_in" value="" /> Jetzt Registrieren und meine Daten für zukünftige Buchungen speichern.<br /><br />
+                <input type="checkbox" name="sms" value="" /> Ich möchte meine Buchungsbestätigung per SMS erhalten.<br /><br />
+                <input type="checkbox" name="email" value="" /> Ich möchte meine Buchungsbestätigungen per Email erhalten.
+            </div>
+        </div>
+    </div>
+    
+</form>
+<div id="weiter" >
+    <a href="Buchung3">Weiter</a>
+</div>
+

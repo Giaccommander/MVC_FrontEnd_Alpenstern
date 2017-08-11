@@ -193,6 +193,56 @@ body, h1 {
 }
 
 
+.ueberschrift{
+    padding-top: 35px;
+    padding-bottom:80px; 
+    color: #5D4037;
+}
+
+.textStyle{
+    text-align: left;
+    color: #5D4037;
+    font-size: 16px;
+
+}
+
+.time{
+    font-weight: bold;
+    text-align:center;
+    color:#5D4037; 
+    font-size: 22px;
+}
+
+.pMA{
+    text-align:center;
+    font-size: 22px;
+    color:#5D4037;
+    font-weight:bold;
+}
+
+.h3Kulinarik{
+
+    font-family: Marcellus-Regular;
+    color: #5D4037;
+    text-align:center;
+}
+
+#color{
+    color:#5D4037;
+}
+
+/* #endregion */
+
+/* #region kulinarik*/
+
+.imgkul {
+    max-height: 250px;
+    max-width: 250px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: inset 0px 0px 12px 1px #5D4037;
+}
+
+
 .ueberschrift {
     padding-top: 35px;
     padding-bottom: 80px;
@@ -493,7 +543,27 @@ nav ul li a {
     position: center;
     margin-left: 8%;
 }
+/* #region history */
 
+.imgHist {
+    border: solid 2px #5d4037;
+    border-radius: 10px;
+  
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.imgHist *
+{
+    border-radius: inherit;
+}
+
+.histHeader {
+    text-align: center;
+    font-family: 'Marcellus-Regular';
+    color: #5D4037;
+    margin-top: 50px;
+}
 .gb_section-white {
     background-color: transparent;
     color: #555;
@@ -750,3 +820,121 @@ h2 {
                 padding-bottom: 10px;
             }
 }
+.rand{
+    border: 2px solid black;
+}
+/*#endregion */
+
+/*#region Zimmer*/
+.zimmerBilder
+{
+	margin-top: 20px;
+    max-width: 350px;
+    min-height: 234px;
+    max-height:235px;
+    border: solid 2px #5d4037;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.50)15px 15px 15px;
+    margin-bottom:17px;
+    margin-top:37px;
+}
+.zimmer-ueberschrift {
+    font-size: 24px;
+    font-family: Marcellus-Regular;
+    position: center;
+    color: #5D4037;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.zimmertext{
+     font-family: Marcellus-Regular;
+    color: #5D4037;
+    margin-bottom:20px;   
+    font-size:18px;
+}
+.zimmercontainer{
+    margin-top:45px;
+}
+.zimmertextklein{
+    margin-left: 15px;
+    margin-top: 20px;
+     font-family: Marcellus-Regular;
+    color: #5D4037;
+    margin-bottom:20px;   
+}
+
+.zimmerliste{
+    padding-top: 25px;
+    padding-left: 55px;
+}
+.z_starttext{
+    border-bottom: 1.5px solid white;
+     height:75px;
+     margin-bottom:15px;
+     text-align:center;
+}
+/*endregion*/
+/* #region Anreise */
+
+.anr_map{
+    max-height: 700px;
+    border: 6px solid white;
+    float:right;
+    border-radius:10px;
+}
+
+.anr_title{
+    font-family: DJ5CTRIAL;
+    text-align:center;
+    font-size: 45px;
+    text-shadow: -3px 1px white;
+    margin-bottom: 120px;
+    margin-top: 45px;
+}
+
+.anr_row{
+    margin-top:70px;
+}
+.anr_text{
+        font-size: 16px;
+        line-height: 45px;
+        text-align:center;
+        border-bottom: 1px solid #5D4037;
+}
+
+.anr_textend{
+        font-size: 16px;
+        line-height: 45px;
+        text-align:center;
+        margin-bottom: 40px;
+}
+
+.anr_txtbox{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px #ffffff;
+}
+/* #endregion*/
+
+/* #region buchungen */
+
+.buchung_title{
+font-family: Marcellus-Regular;
+font-size: 40px;
+margin-top: 55px;
+margin-bottom: 40px;
+
+}
+
+#weiter{
+    font-family: Marcellus-Regular;
+    font-size:24px;
+    margin-top: 75px;
+}
+
+.buchung_chapter{
+    margin-bottom: 55px;
+    border-bottom: 1px solid #5D4037;
+}
+
+/* #endregion */

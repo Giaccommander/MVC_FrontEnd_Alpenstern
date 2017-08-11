@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -52,6 +60,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -128,9 +138,82 @@
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="Controllers\Vorlage_LoginController.cs" />
     <Compile Include="Controllers\ZimmerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlpensternDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlpensternDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlpensternDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlpensternDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlpensternDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Anfrage.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ausstattung.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Bilder.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Gast.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Gastlogin.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Kategorie.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Kategorieanfrage.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Kategorieausstattung.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Komplettbuchung.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Komplettpaket.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Land.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Login.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Mitarbeiter.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rechnung.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rueckruf.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Saison.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stadt.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Zimmer.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Zimmerbuchung.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -157,6 +240,14 @@
     <Content Include="Content\images\img-hotel\Bergkapelle.jpg" />
     <Content Include="Content\images\img-hotel\fockenstein.jpg" />
     <Content Include="Content\images\img-hotel\Hindergrund.jpg" />
+    <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
+    <Content Include="Content\images\history\Folie1.PNG" />
+    <Content Include="Content\images\history\Folie2.PNG" />
+    <Content Include="Content\images\history\Folie3.PNG" />
+    <Content Include="Content\images\history\Folie4.PNG" />
+    <Content Include="Content\images\history\Folie5.PNG" />
+    <Content Include="Content\images\history\Folie6.PNG" />
+    <Content Include="Content\images\history\Folie7.PNG" />
     <Content Include="Content\images\img-hotel\kaiserschmarrn.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_1.jpg" />
     <Content Include="Content\images\img-hotel\AlpenSpa_außen_2.jpg" />
@@ -199,6 +290,30 @@
     <Content Include="Content\images\img-zimmer\Komfort Einzelzimmer_Skizze.jpg" />
     <Content Include="Content\images\img-zimmer\Komforteinzelzimmer.jpg" />
     <Content Include="Content\images\img-zimmer\Komforteinzelzimmer_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\logo_transparent.png" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Gang.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Suite Tirol_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Schlafzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Zirbensuite_Wohnbereich.jpg" />
+    <Content Include="Content\images\img-hotel\hotel-obeschwarzach_kulinarik_1.jpeg" />
+    <Content Include="Content\images\img-hotel\images.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Alpensternsuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Badezimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Gletschersuite_Wohnraum.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_2000x750.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_900x600.jpg" />
+    <Content Include="Content\images\img-zimmer\Juniorsuite_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komfort Einzelzimmer_Skizze.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer.jpg" />
+    <Content Include="Content\images\img-zimmer\Komforteinzelzimmer_Badezimmer.jpg" />
     <Content Include="Content\images\img-zimmer\Suite Tirol_Gang.jpg" />
     <Content Include="Content\images\img-zimmer\Suite Tirol_Skizze.jpg" />
     <Content Include="Content\images\img-zimmer\Suite Tirol_Wohnraum.jpg" />
@@ -210,6 +325,7 @@
     <Content Include="Content\images\img-hotel\images.jpg" />
     <Content Include="Content\images\img-hotel\kosmetik.png" />
     <Content Include="Content\images\img-hotel\massage.png" />
+    <Content Include="Content\images\map.png" />
     <Content Include="Content\images\rückruf\phone-call.jpeg" />
     <Content Include="Content\img\agb_icon.png" />
     <Content Include="Content\img\area_icon.png" />
@@ -306,6 +422,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\AlpensternDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AlpensternDB.edmx</DependentUpon>
+      <LastGenOutput>AlpensternDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AlpensternDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AlpensternDB.edmx</DependentUpon>
+      <LastGenOutput>AlpensternDB.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\Marcellus-Regular.ttf" />
@@ -326,6 +452,15 @@
     <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
     <Content Include="fonts\DJ5CTRIAL.ttf" />
     <Content Include="fonts\Always In My Heart.ttf" />
+    <EntityDeploy Include="Models\AlpensternDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AlpensternDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AlpensternDB.edmx.diagram">
+      <DependentUpon>AlpensternDB.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\akt.ftp.pubxml" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
@@ -364,17 +499,36 @@
       <BrowseToURL>~/Home/spa</BrowseToURL>
     </Content>
     <Content Include="Views\Home\About - Kopieren.cshtml" />
+    <Content Include="Views\Home\hotel.cshtml" />
     <Content Include="Views\Home\rueckruf.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
-    <Content Include="Views\Home\geschichte.cshtml" />
-    <Content Include="Views\Zimmer\Index.cshtml" />
-    <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\Hotelumgebung\Index.cshtml" />
+    <Content Include="Views\Home\geschichte.cshtml" />
+    <Content Include="Views\Zimmer\Index_old.cshtml" />
+    <Content Include="Views\Zimmer\einzelzimmer.cshtml" />
+    <Content Include="Views\Zimmer\Index.cshtml" />
+    <Content Include="Views\Zimmer\kEinzelzimmer.cshtml" />
+    <Content Include="Views\Zimmer\Juniorsuite.cshtml" />
+    <Content Include="Views\Zimmer\SuiteTirol.cshtml" />
+    <Content Include="Views\Zimmer\Zirbensuite.cshtml" />
+    <Content Include="Views\Zimmer\Gletschersuite.cshtml" />
+    <Content Include="Views\Zimmer\SuiteAlpenstern.cshtml" />
+    <Content Include="Views\Kulinarik\Index.cshtml" />
+    <Content Include="Views\Home\Anreise.cshtml" />
+    <Content Include="Views\Zimmer\index.cshtml" />
+    <Content Include="Views\Zimmer\Buchung2.cshtml" />
+    <Content Include="Views\Zimmer\Buchung3.cshtml" />
+    <Content Include="Views\Zimmer\Buchung4.cshtml" />
+    <Content Include="Views\Vorlage_Login\Create.cshtml" />
+    <Content Include="Views\Vorlage_Login\Delete.cshtml" />
+    <Content Include="Views\Vorlage_Login\Details.cshtml" />
+    <Content Include="Views\Vorlage_Login\Edit.cshtml" />
+    <Content Include="Views\Vorlage_Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="1-Script_Daten\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -382,6 +536,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
