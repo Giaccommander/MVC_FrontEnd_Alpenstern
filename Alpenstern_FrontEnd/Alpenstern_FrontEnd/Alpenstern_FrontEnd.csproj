@@ -173,6 +173,7 @@
     <Compile Include="Models\Gastlogin.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GetCarouselImg.cs" />
     <Compile Include="Models\Kategorie.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
@@ -516,7 +517,6 @@
     <Content Include="Views\Zimmer\SuiteAlpenstern.cshtml" />
     <Content Include="Views\Kulinarik\Index.cshtml" />
     <Content Include="Views\Home\Anreise.cshtml" />
-    <Content Include="Views\Zimmer\index.cshtml" />
     <Content Include="Views\Zimmer\Buchung2.cshtml" />
     <Content Include="Views\Zimmer\Buchung3.cshtml" />
     <Content Include="Views\Zimmer\Buchung4.cshtml" />
@@ -525,6 +525,7 @@
     <Content Include="Views\Vorlage_Login\Details.cshtml" />
     <Content Include="Views\Vorlage_Login\Edit.cshtml" />
     <Content Include="Views\Vorlage_Login\Index.cshtml" />
+    <Content Include="Views\Zimmer\Kategorie.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1-Script_Daten\" />

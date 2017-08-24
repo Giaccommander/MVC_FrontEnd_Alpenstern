@@ -10,6 +10,7 @@ namespace Alpenstern_FrontEnd.Controllers
     {
         public ActionResult Index()
         {
+			//GetCarouselImg
             return View();
         }
 
