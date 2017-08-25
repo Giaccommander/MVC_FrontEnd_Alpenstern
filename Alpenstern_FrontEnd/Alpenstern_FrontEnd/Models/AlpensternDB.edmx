@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="alpensternModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="alpensternModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Anfrage">
           <Key>
             <PropertyRef Name="id" />
@@ -122,7 +122,8 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="benutzername" Type="varchar" MaxLength="40" Nullable="false" />
-          <Property Name="passwort" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="passwort" Type="char" MaxLength="64" Nullable="false" />
+          <Property Name="salt" Type="char" MaxLength="64" />
         </EntityType>
         <EntityType Name="Mitarbeiter">
           <Key>
@@ -191,6 +192,18 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
           <Property Name="mitarbeiter_id" Type="int" Nullable="false" />
           <Property Name="kategorieanfrage_id" Type="int" Nullable="false" />
           <Property Name="checkedStatus" Type="bit" />
+        </EntityType>
+        <!--W√§hrend der Generierung sind Fehler aufgetreten:
+Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.get_carousel_imgs' ist kein Prim√§rschl√ºssel definiert. Der Schl√ºssel wurde abgeleitet, und die Definition wurde als schreibgesch√ºtzte Tabelle/Sicht erstellt.-->
+        <EntityType Name="get_carousel_imgs">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="bilderart" />
+            <PropertyRef Name="pfad" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="bilderart" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="pfad" Type="varchar" MaxLength="500" Nullable="false" />
         </EntityType>
         <Association Name="fk__Anfrage__Gast">
           <End Role="Gast" Type="Self.Gast" Multiplicity="1" />
@@ -423,6 +436,13 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
     [Komplettbuchung].[komplettpaket_id] AS [komplettpaket_id]
     FROM [dbo].[Komplettbuchung] AS [Komplettbuchung]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="get_carousel_imgs" EntityType="Self.get_carousel_imgs" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [get_carousel_imgs].[id] AS [id], 
+    [get_carousel_imgs].[bilderart] AS [bilderart], 
+    [get_carousel_imgs].[pfad] AS [pfad]
+    FROM [dbo].[get_carousel_imgs] AS [get_carousel_imgs]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="fk__Anfrage__Gast" Association="Self.fk__Anfrage__Gast">
             <End Role="Gast" EntitySet="Gast" />
             <End Role="Anfrage" EntitySet="Anfrage" />
@@ -488,8 +508,7 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
             <End Role="Zimmerbuchung" EntitySet="Zimmerbuchung" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="alpensternModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -588,8 +607,9 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="benutzername" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="passwort" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="passwort" Type="String" MaxLength="64" FixedLength="true" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Gastlogin" Relationship="Self.fk__Gastlogin__login" FromRole="Login" ToRole="Gastlogin" />
+          <Property Name="salt" Type="String" MaxLength="64" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="Mitarbeiter">
           <Key>
@@ -982,7 +1002,18 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
             <End Role="Zimmer" EntitySet="Zimmer" />
             <End Role="Zimmerbuchung" EntitySet="Zimmerbuchung" />
           </AssociationSet>
+          <EntitySet Name="get_carousel_imgs" EntityType="alpensternModel.get_carousel_imgs" />
         </EntityContainer>
+        <EntityType Name="get_carousel_imgs">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="bilderart" />
+            <PropertyRef Name="pfad" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bilderart" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="pfad" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1073,6 +1104,7 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
           <EntitySetMapping Name="Login">
             <EntityTypeMapping TypeName="alpensternModel.Login">
               <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="salt" ColumnName="salt" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="benutzername" ColumnName="benutzername" />
                 <ScalarProperty Name="passwort" ColumnName="passwort" />
@@ -1179,6 +1211,15 @@ Warnung 6002: F√ºr Tabelle/Sicht 'alpenstern.dbo.Komplettbuchung' ist kein Prim√
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="kategorieanfrage_id" ColumnName="kategorieanfrage_id" />
                 <ScalarProperty Name="komplettpaket_id" ColumnName="komplettpaket_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="get_carousel_imgs">
+            <EntityTypeMapping TypeName="alpensternModel.get_carousel_imgs">
+              <MappingFragment StoreEntitySet="get_carousel_imgs">
+                <ScalarProperty Name="pfad" ColumnName="pfad" />
+                <ScalarProperty Name="bilderart" ColumnName="bilderart" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

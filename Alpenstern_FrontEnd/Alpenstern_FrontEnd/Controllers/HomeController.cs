@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Alpenstern_FrontEnd.Models;
 
 namespace Alpenstern_FrontEnd.Controllers
 {
@@ -10,8 +11,13 @@ namespace Alpenstern_FrontEnd.Controllers
     {
         public ActionResult Index()
         {
-			//GetCarouselImg
-            return View();
+			//GetCarouselImgs
+			var db = new alpensternEntities();
+			var carouselImgs = new List<CarouselImgVM>();
+			foreach (var img in db.get_carousel_imgs.ToList())
+				carouselImgs.Add(new CarouselImgVM(img.id, img.bilderart, img.pfad));
+			var carouselImgListVM = new CarouselImgListVM(carouselImgs);
+            return View(carouselImgListVM);
         }
 
         public ActionResult About()

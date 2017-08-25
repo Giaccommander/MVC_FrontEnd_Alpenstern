@@ -167,13 +167,17 @@
     <Compile Include="Models\Bilder.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CarouselImgListVM.cs" />
+    <Compile Include="Models\CarouselImgVM.cs" />
     <Compile Include="Models\Gast.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Gastlogin.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GetCarouselImg.cs" />
+    <Compile Include="Models\get_carousel_imgs.cs">
+      <DependentUpon>AlpensternDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Kategorie.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
