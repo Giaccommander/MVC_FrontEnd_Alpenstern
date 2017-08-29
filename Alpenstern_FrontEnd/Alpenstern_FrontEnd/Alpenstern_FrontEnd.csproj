@@ -187,6 +187,7 @@
     <Compile Include="Models\Kategorieausstattung.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\KategorieVM.cs" />
     <Compile Include="Models\Komplettbuchung.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
@@ -510,7 +511,6 @@
     <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\Hotelumgebung\Index.cshtml" />
     <Content Include="Views\Home\geschichte.cshtml" />
-    <Content Include="Views\Zimmer\Index_old.cshtml" />
     <Content Include="Views\Zimmer\einzelzimmer.cshtml" />
     <Content Include="Views\Zimmer\Index.cshtml" />
     <Content Include="Views\Zimmer\kEinzelzimmer.cshtml" />
@@ -529,7 +529,8 @@
     <Content Include="Views\Vorlage_Login\Details.cshtml" />
     <Content Include="Views\Vorlage_Login\Edit.cshtml" />
     <Content Include="Views\Vorlage_Login\Index.cshtml" />
-    <Content Include="Views\Zimmer\Kategorie.cshtml" />
+    <Content Include="Views\Zimmer\kategorie.cshtml" />
+    <Content Include="Views\Zimmer\zimmerKategorie.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1-Script_Daten\" />
