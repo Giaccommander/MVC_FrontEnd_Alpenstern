@@ -22,10 +22,10 @@ namespace Alpenstern_FrontEnd.Controllers
 
 		public ActionResult zimmerKategorie(int id)
 		{
-			var db = new alpensternEntities();
-			var dbKategorie = db.Kategorie;
-			var kategorie = new KategorieVM(dbKategorie.id, dbKategorie.bezeichnung, dbKategorie.preis, dbKategorie.personenAnzahl, dbKategorie.groesse);
-			return View(kategorie);
+			//var db = new alpensternEntities();
+			//var dbKategorie = db.Kategorie;
+			//var kategorie = new KategorieVM(dbKategorie.id, dbKategorie.bezeichnung, dbKategorie.preis, dbKategorie.personenAnzahl, dbKategorie.groesse);
+			return View(/*kategorie*/);
 		}
 
         public ActionResult einzelzimmer()
