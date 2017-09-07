@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.IO;
+using Alpenstern_FrontEnd.Models;
 
 namespace Alpenstern_FrontEnd.Controllers
 {
@@ -41,10 +43,16 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
-        public ActionResult rueckruf()
+        [HttpPost]
+        public ActionResult rueckruf(rueckrufVM rueckruf)
         {
             return View();
         }
+        //[HttpPost]
+        //public ActionResult rueckruf()
+        //{
+
+        //}
         public ActionResult geschichte()
         {
             return View();

@@ -2,8 +2,12 @@
     font-family: 'Marcellus-Regular';
     src: url('../fonts/Marcellus-Regular.ttf') format('truetype');
 }
-
-
+.r_header {
+    margin-top: 120px;
+    padding-bottom: 60px;
+    color: #5D4037;
+    font-weight: bold;
+}
 
 * {
     margin: 0;
@@ -60,7 +64,7 @@ body {
     }
 
 .prev {
-    color: #fff;
+    color: #5D4037;
     font-size: 30px;
     position: absolute;
     top: 20%;
@@ -69,7 +73,7 @@ body {
 }
 
 .next {
-    color: #fff;
+    color: #5D4037;
     font-size: 60px;
     position: absolute;
     top: 45%;
@@ -81,18 +85,19 @@ body {
     color: black;
     font-size: 30px;
     position: absolute;
-    top: 32%;
+    top: 33%;
     right: 20%;
     float: right;
     cursor: zoom-out;
+    opacity: 1.0;
 }
 
-/*[class*='thumbnail-']{
+[class*='thumbnail-']{
   overflow: hidden;
   padding: 0;
   position: relative;
   cursor: zoom-in;
-}*/
+}
 
 [class*='thumbnail-']:hover img {
     transition: .3s linear;
@@ -124,4 +129,5 @@ body {
 
 h3 {
     font-family: Marcellus-Regular;
+   
 }
