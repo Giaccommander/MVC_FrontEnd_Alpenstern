@@ -1,0 +1,58 @@
+﻿@model Alpenstern_FrontEnd.Models.Rueckruf
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rueckruf</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grund)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grund)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datum_erhalten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_erhalten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datum_erledigt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_erledigt)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

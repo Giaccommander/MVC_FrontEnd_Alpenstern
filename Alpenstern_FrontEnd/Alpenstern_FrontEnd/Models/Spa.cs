@@ -12,11 +12,11 @@ namespace Alpenstern_FrontEnd.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Spiel
+    public partial class Spa
     {
         public int id { get; set; }
-        public int login_id { get; set; }
-    
-        public virtual Login Login { get; set; }
+        public string bezeichnung { get; set; }
+        public int preis { get; set; }
+        public string einheit { get; set; }
     }
 }

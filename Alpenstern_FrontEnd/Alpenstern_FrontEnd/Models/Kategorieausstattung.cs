@@ -17,6 +17,7 @@ namespace Alpenstern_FrontEnd.Models
         public int id { get; set; }
         public int ausstattung_id { get; set; }
         public int kategorie_id { get; set; }
+        public byte anzahl { get; set; }
     
         public virtual Ausstattung Ausstattung { get; set; }
         public virtual Kategorie Kategorie { get; set; }

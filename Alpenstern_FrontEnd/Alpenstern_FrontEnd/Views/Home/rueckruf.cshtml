@@ -16,22 +16,45 @@
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="vorname">Vorname:</label>
-                        <input type="text" class="form-control" id="vorname">
+                        <input type="text" name="vor" class="form-control" id="vorname">
                     </div>
                     <div class="form-group">
                         <label for="nachname">Nachname:</label>
-                        <input type="text" class="form-control" id="nachname">
+                        <input type="text" name="nach" class="form-control" id="nachname">
                     </div>
                     <div class="form-group">
                         <label for="rufnummer">Rufnummer:</label>
-                        <input type="text" class="form-control" id="rufnummer">
+                        <input type="text" name="ruf" class="form-control" id="rufnummer">
                     </div>
-                    <div class="checkbox">
+                    <div class="form-group">
+                        <label for="nachricht">Nachricht</label><br />
+                        <textarea style="height:125px; width:280px"></textarea>
+                    </div>
+                    @*<div class="checkbox">
                         <label><input type="checkbox"> Ich stimme zu, das meine Rufnummer zum Zweck des Rückrufes gespeichert wird.</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Absenden</button>
+                    </div>*@
+                    <button type="button" class="btn" value="senden">Absenden</button>
                 </form>
             </div>
+
+
+
+            <script>
+    function f_ajax() {
+        //alert("ok");
+        $.ajax({
+            url:"/Rueckrufs",//controller erreichen wohin geht dieser link
+            data:{vor: $("#vorname").val(),nach:$("#nachname").val(),ruf:$("#rufnummer").val()}, //er sucht den mit # die werte vorname und nachname
+            method:"post"
+        }).done(function(msg) {
+
+            console.log(msg);
+        })
+    }
+            </script>
+
+
+
 
 
             <div class="col-lg-7">

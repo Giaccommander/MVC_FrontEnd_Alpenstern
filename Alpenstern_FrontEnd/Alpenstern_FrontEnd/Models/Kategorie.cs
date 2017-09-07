@@ -26,7 +26,7 @@ namespace Alpenstern_FrontEnd.Models
         public string bezeichnung { get; set; }
         public decimal preis { get; set; }
         public int personenAnzahl { get; set; }
-        public int groeße { get; set; }
+        public int groesse { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Kategorieausstattung> Kategorieausstattung { get; set; }

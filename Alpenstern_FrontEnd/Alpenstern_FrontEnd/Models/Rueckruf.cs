@@ -18,5 +18,7 @@ namespace Alpenstern_FrontEnd.Models
         public string name { get; set; }
         public string telefon { get; set; }
         public string grund { get; set; }
+        public System.DateTime datum_erhalten { get; set; }
+        public Nullable<System.DateTime> datum_erledigt { get; set; }
     }
 }

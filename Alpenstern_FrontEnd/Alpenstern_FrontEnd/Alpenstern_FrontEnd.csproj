@@ -137,6 +137,7 @@
     <Compile Include="Controllers\HotelumgebungController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RueckrufsController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\vorlage_LoginsController.cs" />
     <Compile Include="Controllers\ZimmerController.cs" />
@@ -144,76 +145,94 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Anfrage.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Ausstattung.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Bilder.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DB_Frontend.Context.cs">
+    <Compile Include="Models\DB_Alpenstern.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Frontend.Context.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DB_Frontend.cs">
+    <Compile Include="Models\DB_Alpenstern.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DB_Frontend.Designer.cs">
+    <Compile Include="Models\DB_Alpenstern.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Frontend.edmx</DependentUpon>
+      <DependentUpon>DB_Alpenstern.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Gaestebuch.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Gast.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Gastlogin.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\get_carousel_imgs.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Kategorie.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Kategorieanfrage.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Kategorieausstattung.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Komplettbuchung.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Komplettpaket.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Land.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Login.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Mitarbeiter.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rechnung.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Rueckruf.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Saison.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Spiel.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+    <Compile Include="Models\Spa.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Stadt.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Zimmer.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Zimmerbuchung.cs">
-      <DependentUpon>DB_Frontend.tt</DependentUpon>
+      <DependentUpon>DB_Alpenstern.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -422,15 +441,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\DB_Frontend.Context.tt">
+    <Content Include="Models\DB_Alpenstern.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB_Frontend.edmx</DependentUpon>
-      <LastGenOutput>DB_Frontend.Context.cs</LastGenOutput>
+      <DependentUpon>DB_Alpenstern.edmx</DependentUpon>
+      <LastGenOutput>DB_Alpenstern.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DB_Frontend.tt">
+    <Content Include="Models\DB_Alpenstern.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB_Frontend.edmx</DependentUpon>
-      <LastGenOutput>DB_Frontend.cs</LastGenOutput>
+      <DependentUpon>DB_Alpenstern.edmx</DependentUpon>
+      <LastGenOutput>DB_Alpenstern.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -452,12 +471,12 @@
     <Content Include="fonts\KGWaystoSayGoodbye.ttf" />
     <Content Include="fonts\DJ5CTRIAL.ttf" />
     <Content Include="fonts\Always In My Heart.ttf" />
-    <EntityDeploy Include="Models\DB_Frontend.edmx">
+    <EntityDeploy Include="Models\DB_Alpenstern.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB_Frontend.Designer.cs</LastGenOutput>
+      <LastGenOutput>DB_Alpenstern.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\DB_Frontend.edmx.diagram">
-      <DependentUpon>DB_Frontend.edmx</DependentUpon>
+    <Content Include="Models\DB_Alpenstern.edmx.diagram">
+      <DependentUpon>DB_Alpenstern.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\akt.ftp.pubxml" />
     <None Include="Properties\PublishProfiles\test.pubxml" />
@@ -525,6 +544,11 @@
     <Content Include="Views\vorlage_Logins\Details.cshtml" />
     <Content Include="Views\vorlage_Logins\Edit.cshtml" />
     <Content Include="Views\vorlage_Logins\Index.cshtml" />
+    <Content Include="Views\Rueckrufs\Create.cshtml" />
+    <Content Include="Views\Rueckrufs\Delete.cshtml" />
+    <Content Include="Views\Rueckrufs\Details.cshtml" />
+    <Content Include="Views\Rueckrufs\Edit.cshtml" />
+    <Content Include="Views\Rueckrufs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

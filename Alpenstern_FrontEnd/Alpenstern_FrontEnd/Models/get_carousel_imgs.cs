@@ -12,11 +12,10 @@ namespace Alpenstern_FrontEnd.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Bilder
+    public partial class get_carousel_imgs
     {
         public int id { get; set; }
         public string bilderart { get; set; }
         public string pfad { get; set; }
-        public byte[] dbimage { get; set; }
     }
 }

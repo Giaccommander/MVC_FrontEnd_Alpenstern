@@ -18,8 +18,7 @@ namespace Alpenstern_FrontEnd.Models
         public int zimmer_id { get; set; }
         public int mitarbeiter_id { get; set; }
         public int kategorieanfrage_id { get; set; }
-        public Nullable<System.DateTime> datumVon { get; set; }
-        public Nullable<System.DateTime> datumBis { get; set; }
+        public Nullable<bool> checkedStatus { get; set; }
     
         public virtual Kategorieanfrage Kategorieanfrage { get; set; }
         public virtual Mitarbeiter Mitarbeiter { get; set; }

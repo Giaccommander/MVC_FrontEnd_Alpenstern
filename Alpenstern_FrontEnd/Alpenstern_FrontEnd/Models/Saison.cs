@@ -16,5 +16,8 @@ namespace Alpenstern_FrontEnd.Models
     {
         public int id { get; set; }
         public string bezeichnung { get; set; }
+        public byte monatVon { get; set; }
+        public byte monatBis { get; set; }
+        public decimal preisProzent { get; set; }
     }
 }

@@ -22,6 +22,7 @@ namespace Alpenstern_FrontEnd.Models
     
         public int id { get; set; }
         public string bezeichnung { get; set; }
+        public decimal zuschlagProTag { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Komplettbuchung> Komplettbuchung { get; set; }

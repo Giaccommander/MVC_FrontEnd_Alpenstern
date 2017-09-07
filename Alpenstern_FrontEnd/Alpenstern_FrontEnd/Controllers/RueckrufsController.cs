@@ -8,109 +8,110 @@ using System.Web;
 using System.Web.Mvc;
 using Alpenstern_FrontEnd.Models;
 
+
 namespace Alpenstern_FrontEnd.Controllers
 {
-    public class vorlage_LoginsController : Controller
+    public class RueckrufsController : Controller
     {
         private alpensternEntities db = new alpensternEntities();
 
-        // GET: vorlage_Logins
+        // GET: Rueckrufs
         public ActionResult Index()
         {
-            return View(db.Login.ToList());
+            return View(db.Rueckruf.ToList());
         }
 
-        // GET: vorlage_Logins/Details/5
+        // GET: Rueckrufs/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Login login = db.Login.Find(id);
-            if (login == null)
+            Rueckruf rueckruf = db.Rueckruf.Find(id);
+            if (rueckruf == null)
             {
                 return HttpNotFound();
             }
-            return View(login);
+            return View(rueckruf);
         }
 
-        // GET: vorlage_Logins/Create
+        // GET: Rueckrufs/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: vorlage_Logins/Create
+        // POST: Rueckrufs/Create
         // Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,benutzername,passwort")] Login login)
+        public ActionResult Create([Bind(Include = "id,name,telefon,grund,datum_erhalten,datum_erledigt")] Rueckruf rueckruf)
         {
             if (ModelState.IsValid)
             {
-                db.Login.Add(login);
+                db.Rueckruf.Add(rueckruf);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(login);
+            return View(rueckruf);
         }
 
-        // GET: vorlage_Logins/Edit/5
+        // GET: Rueckrufs/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Login login = db.Login.Find(id);
-            if (login == null)
+            Rueckruf rueckruf = db.Rueckruf.Find(id);
+            if (rueckruf == null)
             {
                 return HttpNotFound();
             }
-            return View(login);
+            return View(rueckruf);
         }
 
-        // POST: vorlage_Logins/Edit/5
+        // POST: Rueckrufs/Edit/5
         // Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,benutzername,passwort")] Login login)
+        public ActionResult Edit([Bind(Include = "id,name,telefon,grund,datum_erhalten,datum_erledigt")] Rueckruf rueckruf)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(login).State = EntityState.Modified;
+                db.Entry(rueckruf).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(login);
+            return View(rueckruf);
         }
 
-        // GET: vorlage_Logins/Delete/5
+        // GET: Rueckrufs/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Login login = db.Login.Find(id);
-            if (login == null)
+            Rueckruf rueckruf = db.Rueckruf.Find(id);
+            if (rueckruf == null)
             {
                 return HttpNotFound();
             }
-            return View(login);
+            return View(rueckruf);
         }
 
-        // POST: vorlage_Logins/Delete/5
+        // POST: Rueckrufs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Login login = db.Login.Find(id);
-            db.Login.Remove(login);
+            Rueckruf rueckruf = db.Rueckruf.Find(id);
+            db.Rueckruf.Remove(rueckruf);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

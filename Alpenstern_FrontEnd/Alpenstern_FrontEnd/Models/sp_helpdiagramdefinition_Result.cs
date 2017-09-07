@@ -10,13 +10,10 @@
 namespace Alpenstern_FrontEnd.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Bilder
+    public partial class sp_helpdiagramdefinition_Result
     {
-        public int id { get; set; }
-        public string bilderart { get; set; }
-        public string pfad { get; set; }
-        public byte[] dbimage { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
