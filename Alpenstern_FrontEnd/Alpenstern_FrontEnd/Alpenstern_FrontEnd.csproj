@@ -137,6 +137,7 @@
     <Compile Include="Controllers\HotelumgebungController.cs" />
     <Compile Include="Controllers\KulinarikController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegistrierungController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\Vorlage_LoginController.cs" />
     <Compile Include="Controllers\ZimmerController.cs" />
@@ -536,6 +537,7 @@
   <ItemGroup>
     <Folder Include="1-Script_Daten\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Registrierung\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
