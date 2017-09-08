@@ -12,16 +12,15 @@ namespace Alpenstern_FrontEnd.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Index()
+        public ActionResult Index(string status = null)
         {
+			ViewBag.status = status;
             return View();
         }
 
 		[HttpPost]
         public ActionResult Login(string email, string passwort)
         {
-			//var login = new Login();
-			var db = new alpensternEntities();
 			SqlConnection conn = new SqlConnection();
 			SqlCommand comm = new SqlCommand("EXEC get_user_salt(" + email + ");");
 			string salt = (string)comm.ExecuteScalar();
@@ -30,10 +29,11 @@ namespace Alpenstern_FrontEnd.Controllers
 			int? id = (int?)comm.ExecuteScalar();
 			if (id != null)
 			{
+				var db = new alpensternEntities();
 				Session["user"] = db.Login.Find(id);
 				return View();
 			}
-            return RedirectToAction("Index");
+			return RedirectToAction("Index", "Login feherhaft");
         }
     }
 }
