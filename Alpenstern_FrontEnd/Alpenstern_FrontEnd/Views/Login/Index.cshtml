@@ -6,29 +6,40 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                
+
                 <div class="form-wrap">
                     <h1>LOGIN</h1>
                     <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
                             <label for="email" class="label_icon">
-                                <img class="label_icon" src="~/Content/img/mail_icon.png" /></label>
+                                <img class="label_icon" src="~/Content/img/mail_icon.png" />
+                            </label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="max.muster@beispiel.at">
                         </div>
                         <div class="form-group">
                             <label for="key" class="label_icon">
-                                <img class="label_icon" src="~/Content/img/pw_icon.png" /></label>
+                                <img class="label_icon" src="~/Content/img/pw_icon.png" />
+                            </label>
                             <input type="password" name="key" id="key" class="form-control" placeholder="Passwort" />
-                             
-                            
+
+
                         </div>
                         <div class="checkbox">
                             <span class="character-checkbox" onclick="showPassword()"></span>
-                            <span class="label">Passswort anzeigen</span>
+                            <span class="label">Passwort anzeigen</span>
                         </div>
                         <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Anmelden">
                     </form>
-                    <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Passwort vergessen?</a>
+                    <div class="links">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Passwort vergessen?</a>
+                            </div>
+                            <div class="col-sm-6">
+                                @Html.ActionLink("Registrierung", "Index", "Registrierung",null, new { @class = "regforget" })
+                            </div>
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </div> <!-- /.col-xs-12 -->
@@ -38,7 +49,7 @@
 <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <div class="modal-header"  style="background-color:#f2ebde;">
+            <div class="modal-header" style="background-color:#f2ebde;">
                 <button type="button" class="close" data-dismiss="modal">
                     <span aria-hidden="true">×</span>
                     <span class="sr-only">Close</span>
@@ -56,4 +67,3 @@
         </div> <!-- /.modal-content -->
     </div> <!-- /.modal-dialog -->
 </div> <!-- /.modal -->
-

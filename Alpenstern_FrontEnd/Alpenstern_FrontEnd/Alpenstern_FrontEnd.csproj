@@ -350,6 +350,7 @@
     <Content Include="Content\img\login_icon.png" />
     <Content Include="Content\img\mail_icon.png" />
     <Content Include="Content\img\pw_icon.png" />
+    <Content Include="Content\img\registrierung.jpg" />
     <Content Include="Content\img\restaurant_icon.png" />
     <Content Include="Content\img\rooms_icon.png" />
     <Content Include="Content\img\service_icon.png" />
@@ -533,11 +534,11 @@
     <Content Include="Views\Vorlage_Login\Index.cshtml" />
     <Content Include="Views\Zimmer\kategorie.cshtml" />
     <Content Include="Views\Zimmer\zimmerKategorie.cshtml" />
+    <Content Include="Views\Registrierung\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1-Script_Daten\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Registrierung\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

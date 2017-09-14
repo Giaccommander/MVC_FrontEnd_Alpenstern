@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<header>
+    <h2 class="reg">Registrierung</h2>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-5">
+                <h3 class="reg-ueberschrift">Sehr geehrte Gäste des Hotel Alpenstern</h3>
+                <p class="regText">Um unser Online-Buchungssystem nutzen zu können, bitten wir Sie um einige Informationen.</p>
+                <div class="col col-md-5">
+                    <form action="/" method="post">
+                        <div class="form-group">
+                            <label class="regText" for="vorname">Vorname:</label>
+                            <input type="text" class="regform-control" id="vorname">
+                        </div>
+                        <div class="form-group">
+                            <label class="regText" for="nachname">Nachname:</label>
+                            <input type="text" class="regform-control" id="nachname">
+                        </div>
+                        <div class="form-group">
+                            <label class="regText" for="gebDatum">Geburtsdatum:</label>
+                            <input type="text" class="regform-control" id="gebDatum">
+                        </div>
+                        <div class="form-group">
+                            <label class="regText" for="strasse">Straße:</label>
+                            <input type="text" class="regform-control" id="strasse">
+                        </div>
+                        <div class="form-group">
+                            <label class="regText" for="email">E-mail:</label>
+                            <input type="text" class="regform-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="regText" for="telefon">Telefon:</label>
+                            <input type="tel" class="regform-control" id="telefon">
+                        </div>
+                        <div class="form-group">
+                            <label class="regText" for="passport">Reisepassnummer:</label>
+                            <input type="text" class="regform-control" id="passport">
+                        </div>
+                        <div class="form-group">
+                            @*<input class="btn btn-primary" type="submit" value="Registrierung absenden">*@
+                            <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Schickst Du!">
+                        </div>
+                    </form>
+
+                    <button class="btn btn-custom btn-lg btn-block" onclick="window.history.back();">Back</button><br />
+                </div><div class="col-lg-7">
+                    <img class="reg_image" src="~/Content/img/registrierung.jpg"/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</section>

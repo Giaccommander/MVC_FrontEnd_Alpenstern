@@ -380,7 +380,7 @@ nav ul li a {
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-color: #f2ebde;
-    ;
+    
     color: #5D4037;
 }
 
@@ -786,6 +786,59 @@ h2 {
 /* #endregion */
 
 
+/*#region registrierung*/
+
+.reg{
+    margin-top: 50px;
+    margin-left: 135px;
+}
+
+
+.regforget {
+    font-size: 13px;
+    text-align: center;
+    display: table;
+}
+
+.reg-ueberschrift {
+    font-size: 24px;
+    font-family: Marcellus-Regular;
+    position: center;
+    color: #5D4037;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.regText{
+    color:#5D4037;
+    font-size: 16px;
+    font-family: Marcellus-Regular;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.regform-control {
+    color: #5D4037;
+    border-radius: 5px;
+    width: 275px;
+}
+
+.reg_image {
+    border: solid 1px #5D4037;
+    border-radius: 10px;
+    box-shadow: 7px 12px 20px 5px #5D4037;
+    height: 250px;
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 130px;
+}
+
+
+
+
+
+/*#endregion*/
+
 
 /*-------Regelt die Umstellung von Navbar auf Burgermenue bei 1000px----------- */
 @media (max-width: 1000px) {
@@ -873,7 +926,7 @@ h2 {
      margin-bottom:15px;
      text-align:center;
 }
-/*endregion*/
+/*#endregion*/
 /* #region Anreise */
 
 .anr_map{
