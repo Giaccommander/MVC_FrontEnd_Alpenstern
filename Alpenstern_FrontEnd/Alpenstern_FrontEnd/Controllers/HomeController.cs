@@ -56,38 +56,7 @@ namespace Alpenstern_FrontEnd.Controllers
         }
 
 
-        [HttpPost]
-
-        public JsonResult SaveForm(string vor, string nach, string ruf)
-        {
-
-            var anrufen = new Rueckruf();
-
-            anrufen.name = vor+" "+nach;
-            anrufen.telefon = ruf;         
-            List<Login> Login = null;
-            using (var db = new alpensternEntities())
-
-            {
-                try
-                {
-                    //schreibzugriff
-                    db.Rueckruf.Add(anrufen);
-                    db.SaveChanges();
-                    //lesezugriff
-                    Login = db.Login.ToList();
-
-                    return Json(Login);
-                }
-                catch (Exception e)
-                {
-
-                    return Json("Name schon vorhanden!!" + e.Message);
-                }
-
-            }
-
-        }
+    
 
 
 

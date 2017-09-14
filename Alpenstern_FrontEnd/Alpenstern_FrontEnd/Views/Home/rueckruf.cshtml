@@ -5,56 +5,42 @@
     <div class="text-center"><h1 class="r_header">Rückrufservice</h1></div>
     <div class="container">
         <div class="row">
-
+@*@using (Html.BeginForm())
+{*@
+            <div class="text-info">
+                @ViewBag.error
+                @ViewBag.info
+            </div>
             <div class="col col-lg-5 ">
                 <p>
                     Sie wünschen einen Rückruf für eventuelle Fragen oder eines Anliegens.<br />
                     Schicken Sie uns Ihre Rufnummer unter der wir sie zurück rufen können.<br />
                     Mit freundlichen grüssen, Ihr Hotel Team
                 </p>
-
-                <form action="" method="post">
+                <form action="~/Rueckrufs/SaveForm" method="post">
                     <div class="form-group">
                         <label for="vorname">Vorname:</label>
-                        <input type="text" name="vor" class="form-control" id="vorname">
+                        <input type="text" name="vorname" class="form-control" id="vorname">
                     </div>
                     <div class="form-group">
                         <label for="nachname">Nachname:</label>
-                        <input type="text" name="nach" class="form-control" id="nachname">
+                        <input type="text" name="nachname" class="form-control" id="nachname">
                     </div>
                     <div class="form-group">
                         <label for="rufnummer">Rufnummer:</label>
-                        <input type="text" name="ruf" class="form-control" id="rufnummer">
+                        <input type="text" name="rufnummer" class="form-control" id="rufnummer">
                     </div>
                     <div class="form-group">
-                        <label for="nachricht">Nachricht</label><br />
-                        <textarea style="height:125px; width:280px"></textarea>
+                        <label for="nachricht" >Nachricht</label><br />
+                        <textarea id="nachricht" name="nachricht" style="height:125px; width:280px"></textarea>
                     </div>
                     @*<div class="checkbox">
                         <label><input type="checkbox"> Ich stimme zu, das meine Rufnummer zum Zweck des Rückrufes gespeichert wird.</label>
                     </div>*@
-                    <button type="button" class="btn" value="senden">Absenden</button>
+                    <input type="submit" class="btn" value="senden">
                 </form>
             </div>
-
-
-
-            <script>
-    function f_ajax() {
-        //alert("ok");
-        $.ajax({
-            url:"/Rueckrufs",//controller erreichen wohin geht dieser link
-            data:{vor: $("#vorname").val(),nach:$("#nachname").val(),ruf:$("#rufnummer").val()}, //er sucht den mit # die werte vorname und nachname
-            method:"post"
-        }).done(function(msg) {
-
-            console.log(msg);
-        })
-    }
-            </script>
-
-
-
+@*}*@
 
 
             <div class="col-lg-7">

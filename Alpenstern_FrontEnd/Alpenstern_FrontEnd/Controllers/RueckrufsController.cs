@@ -45,50 +45,51 @@ namespace Alpenstern_FrontEnd.Controllers
         // POST: Rueckrufs/Create
         // Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,name,telefon,grund,datum_erhalten,datum_erledigt")] Rueckruf rueckruf)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Rueckruf.Add(rueckruf);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create([Bind(Include = "id,name,telefon,grund,datum_erhalten,datum_erledigt")] Rueckruf rueckruf)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Rueckruf.Add(rueckruf);
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
 
-            return View(rueckruf);
-        }
+        //    return View(rueckruf);
+        //}
 
-        // GET: Rueckrufs/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Rueckruf rueckruf = db.Rueckruf.Find(id);
-            if (rueckruf == null)
-            {
-                return HttpNotFound();
-            }
-            return View(rueckruf);
-        }
+        //// GET: Rueckrufs/Edit/5
+        //public ActionResult Edit(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    Rueckruf rueckruf = db.Rueckruf.Find(id);
+        //    if (rueckruf == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(rueckruf);
+        //}
 
-        // POST: Rueckrufs/Edit/5
-        // Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
-        // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,name,telefon,grund,datum_erhalten,datum_erledigt")] Rueckruf rueckruf)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(rueckruf).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(rueckruf);
-        }
+        //// POST: Rueckrufs/Edit/5
+        //// Aktivieren Sie zum Schutz vor übermäßigem Senden von Angriffen die spezifischen Eigenschaften, mit denen eine Bindung erfolgen soll. Weitere Informationen 
+        //// finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Edit([Bind(Include = "id,name,telefon,grund,datum_erhalten,datum_erledigt")] Rueckruf rueckruf)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Entry(rueckruf).State = EntityState.Modified;
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(rueckruf);
+        //}
+
 
         // GET: Rueckrufs/Delete/5
         public ActionResult Delete(int? id)
@@ -104,6 +105,35 @@ namespace Alpenstern_FrontEnd.Controllers
             }
             return View(rueckruf);
         }
+        [HttpPost]
+        public ActionResult SaveForm(string vorname, string nachname, string rufnummer, string nachricht)
+        {
+
+
+            var anrufen = new Rueckruf();
+
+            anrufen.name = vorname + " " + nachname;
+            anrufen.telefon = rufnummer;
+            anrufen.grund = nachricht;
+            anrufen.datum_erhalten = DateTime.Now;
+
+            try
+            {
+                //schreibzugriff
+                db.Rueckruf.Add(anrufen);
+                db.SaveChanges();
+                ViewBag.info = "Rückruf wurde gespeichert";
+
+            }
+            catch (Exception e)
+            {
+
+                ViewBag.error = e.Message;
+            }
+
+            return View("~/Views/Home/rueckruf.cshtml");
+        }
+
 
         // POST: Rueckrufs/Delete/5
         [HttpPost, ActionName("Delete")]
@@ -126,3 +156,4 @@ namespace Alpenstern_FrontEnd.Controllers
         }
     }
 }
+
