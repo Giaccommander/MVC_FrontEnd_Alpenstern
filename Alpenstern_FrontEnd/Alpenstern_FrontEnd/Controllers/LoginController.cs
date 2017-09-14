@@ -19,19 +19,22 @@ namespace Alpenstern_FrontEnd.Controllers
         }
 
 		[HttpPost]
-        public ActionResult Login(string email, string passwort)
+        public ActionResult Login(string benutzername, string passwort)
         {
-			SqlConnection conn = new SqlConnection();
-			SqlCommand comm = new SqlCommand("EXEC get_user_salt(" + email + ");");
-			string salt = (string)comm.ExecuteScalar();
-			string hashedPasswort = Hasher.hash(passwort + salt);
-			comm = new SqlCommand("EXEC login_user(" + email + ", " + hashedPasswort + ");");
-			int? id = (int?)comm.ExecuteScalar();
-			if (id != null)
+			if (benutzername == "" || passwort == "")
 			{
-				var db = new alpensternEntities();
-				Session["user"] = db.Login.Find(id);
-				return View();
+				SqlConnection conn = new SqlConnection();
+				SqlCommand comm = new SqlCommand("SELECT get_user_salt(" + benutzername + ");");
+				string salt = (string)comm.ExecuteScalar();
+				string hashedPasswort = Hasher.hash(passwort + salt);
+				comm = new SqlCommand("SELECT login_user(" + benutzername + ", " + hashedPasswort + ");");
+				int? id = (int?)comm.ExecuteScalar();
+				if (id != null)
+				{
+					var db = new alpensternEntities();
+					Session["user"] = db.Login.Find(id);
+					return View();
+				}
 			}
 			return RedirectToAction("Index", "Login feherhaft");
         }

@@ -17,7 +17,7 @@ namespace Alpenstern_FrontEnd.Helper
 			return hexToString(hash);
 		}
 
-		public static string getSalt()
+		public static string createSalt()
 		{
 			byte[] salt = new byte[32];
 			RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
