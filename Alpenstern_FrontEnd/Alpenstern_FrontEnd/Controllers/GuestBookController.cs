@@ -13,5 +13,10 @@ namespace Alpenstern_FrontEnd.Controllers
         {
             return View();
         }
+
+        public JsonResult NewEntry(string vname, string nname, string gb_message)
+        {
+            return Json(vname+nname+gb_message, JsonRequestBehavior.AllowGet);
+        }
     }
 }
