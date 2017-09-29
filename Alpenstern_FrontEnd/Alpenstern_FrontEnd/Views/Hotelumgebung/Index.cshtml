@@ -9,21 +9,42 @@
 <link href="~/Content/3DGallery.css" rel="stylesheet" />
 <script src="~/Content/wow.js"></script>
 <script src="~/Content/wow.min.js"></script>
+<script src="~/Content/JavaScript.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("[class^='thumbnail-']").click(function () {
+            $("[class^='thumbnail-']").slideToggle("fast");
+            $(this).next("[class^='large-']").slideToggle();
+        });
+
+        $(".close").click(function () {
+            $("[class^='large-']:visible").toggle();
+            $("[class^='thumbnail-']").fadeToggle("fast");
+        });
+    });
+
+    new WOW().init();
+
+</script>
 
 <div class="container">
     <h1 class="r_header text-center">Highlights unserer Umgebung</h1>
     <div class="row">
         <div class="gallery">
             @*-----------------------------------*@
-            <div class="thumbnail-1 wow fadeInLeft">
-                <img src="~/Content/images/img-hotel/7.jpg" />
-                <div class="caption">
-                    <h3 class="wow fadeInUp">Berghütten</h3>
+            <div>
+                <div class="thumbnail-1 wow fadeInLeft">
+                    <img src="~/Content/images/img-hotel/7.jpg" />
+                    <div class="caption">
+                        <h3 class="wow fadeInUp">Berghütten</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="large-1 wow bounceInLeft">
-                <img src="~/Content/images/img-hotel/7.jpg" />
-                <span class="close">✕</span>
+                <div class="large-1 wow bounceInLeft">
+                    <img src="~/Content/images/img-hotel/7.jpg" />
+                    <span class="close">✕</span>
+                </div>
             </div>
             @*-----------------------------------*@
             <div class="thumbnail-2 wow fadeInDown">
