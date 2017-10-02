@@ -1,11 +1,11 @@
-﻿
+﻿@model Alpenstern_FrontEnd.Models.TextCarouselGBVM
 @{
     ViewBag.Title = "Index";
 }
 
 
 
-<script type="text/javascript">
+@*<script type="text/javascript">
 
     $(document).ready(function () {
         $("form").on("submit", function (event) {
@@ -22,7 +22,7 @@
         });
     });
 
-</script>
+</script>*@
 
 <h2 class="gb_ueberschrift">Gästebuch</h2>
 <div class="gb_intro">
@@ -39,7 +39,7 @@
 
 <div class="row" style="margin-top:35px;">
     <div class="col-md-4" style="padding-top:20px; float:left; ">
-        <form id="gb_form" action="/" method="post" target="">
+        <form id="gb_form" action="/GuestBook/gb_newMessage()" method="post" target="">
           
                 <div class="form-group">
                     <label for="vname">Vorname</label>
@@ -68,20 +68,22 @@
                     <div class="carousel-inner" style="margin-top:12.5%">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-lg-6 gb_text gb_name">
-                                    Vorname <br/>
-                                    Nachname
-                                </div>
-                                <div class="col-lg-6 gb_text">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                                </div>
+                                @foreach (var item in Model.Liste)
+                                {
+                                    <div class="col-lg-6 gb_text gb_name">
+                                        @Html.LabelFor(e => e.name)
+                                        @Model.name <br />
+                                        @Model.surname
+                                    </div>
+                                    <div class="col-lg-6 gb_text">
+                                        @Model.msg
+                                    </div>
+
+                                }
                             </div>
                             
                         </div>
-                        <div class="item">
+                        @*<div class="item">
                             <div class="row">
                                 <div class="col-lg-6 gb_text gb_name">
                                     Vorname <br />
@@ -108,7 +110,7 @@
                                     Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                 </div>
                             </div>
-                        </div>
+                        </div>*@
                     </div>
                   
                 </div>

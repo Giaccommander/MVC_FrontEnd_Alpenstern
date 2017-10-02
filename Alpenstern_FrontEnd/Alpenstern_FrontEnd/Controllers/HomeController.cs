@@ -14,10 +14,10 @@ namespace Alpenstern_FrontEnd.Controllers
 			//GetCarouselImgs
 			var db = new alpensternEntities();
 			var carouselImgs = new List<CarouselImgVM>();
-			foreach (var img in db.get_carousel_imgs.ToList())
-				carouselImgs.Add(new CarouselImgVM(img.id, img.bilderart, img.pfad));
-			var carouselImgListVM = new CarouselImgListVM(carouselImgs);
-            return View(carouselImgListVM);
+			//foreach (var img in db.get_carousel_imgs.ToList())
+			//	carouselImgs.Add(new CarouselImgVM(img.id, img.bilderart, img.pfad));
+			//var carouselImgListVM = new CarouselImgListVM(carouselImgs);
+            return View();
         }
 
         public ActionResult About()

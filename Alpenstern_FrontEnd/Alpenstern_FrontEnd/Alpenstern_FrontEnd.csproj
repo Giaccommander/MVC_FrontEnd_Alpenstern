@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -132,6 +133,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppDownloadController.cs" />
     <Compile Include="Controllers\GameController.cs" />
+    <Compile Include="Controllers\GuestBook.cs" />
     <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelumgebungController.cs" />
@@ -215,6 +217,7 @@
     <Compile Include="Models\Stadt.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TextCarouselGBVM.cs" />
     <Compile Include="Models\Zimmer.cs">
       <DependentUpon>AlpensternDB.tt</DependentUpon>
     </Compile>
@@ -531,6 +534,7 @@
     <Content Include="Views\Vorlage_Login\Index.cshtml" />
     <Content Include="Views\Zimmer\kategorie.cshtml" />
     <Content Include="Views\Zimmer\zimmerKategorie.cshtml" />
+    <Content Include="Views\GuestBook\textGbCaroussel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1-Script_Daten\" />
