@@ -5,33 +5,22 @@
 <section id="login">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
                 
                 <div class="form-wrap">
                     <h1>LOGIN</h1>
-                    <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                    <form method="post" id="login-form">
                         <div class="form-group">
-                            <label for="email" class="label_icon">
-                                <img class="label_icon" src="~/Content/img/mail_icon.png" /></label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="max.muster@beispiel.at">
+                            <label for="benutzername" class="label_icon">
+                                <img class="label_icon" src="~/Content/img/contact_icon.png" /></label>
+                            <input type="text" name="benutzername" id="benutzername" class="form-control" placeholder="Benutzername">
                         </div>
                         <div class="form-group">
-                            <label for="key" class="label_icon">
+                            <label for="passwort" class="label_icon">
                                 <img class="label_icon" src="~/Content/img/pw_icon.png" /></label>
-                            <input type="password" name="key" id="key" class="form-control" placeholder="Passwort" />
-                             
-                            
+                            <input type="password" name="passwort" id="passwort" class="form-control" placeholder="Passwort" />
                         </div>
-                        <div class="checkbox">
-                            <span class="character-checkbox" onclick="showPassword()"></span>
-                            <span class="label">Passswort anzeigen</span>
-                        </div>
-                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Anmelden">
+                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Login">
                     </form>
-                    <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Passwort vergessen?</a>
-                    <hr>
-                </div>
-            </div> <!-- /.col-xs-12 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>

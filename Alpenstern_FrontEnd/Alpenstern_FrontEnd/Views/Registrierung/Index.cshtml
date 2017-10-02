@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<section id="login">
+    <div class="container">
+        <div class="row">
+
+            <div class="form-wrap">
+                <h1>REGISTRIERUNG</h1>
+                <form method="post" id="registierung-form">
+                    <div class="form-group">
+                        <label for="benutzername" class="label_icon">
+                            <img class="label_icon" src="~/Content/img/contact_icon.png" />
+                        </label>
+                        <input type="text" name="benutzername" id="benutzername" class="form-control" placeholder="Benutzername">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwort" class="label_icon">
+                            <img class="label_icon" src="~/Content/img/pw_icon.png" />
+                        </label>
+                        <input type="password" name="passwort" id="passwort" class="form-control" placeholder="Passwort" />
+                    </div>
+                    <div class="form-group">
+                        <label for="passwortWh" class="label_icon">
+                            <img class="label_icon" src="~/Content/img/pw_icon.png" />
+                        </label>
+                        <input type="password" name="passwortWh" id="passwortWh" class="form-control" placeholder="Passwort wiederholen" />
+                    </div>
+                    <input type="submit" id="btn-registrierung" class="btn btn-custom btn-lg btn-block" value="Registrieren">
+                </form>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+</section>
