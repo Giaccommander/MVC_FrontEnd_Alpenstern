@@ -67,7 +67,7 @@ namespace Alpenstern_FrontEnd.Controllers
                 }
                 vm.Liste.Add(eintrag);
             }
-            return View(vm);
+            return RedirectToAction("Index","GuestBookController",vm);
         }
     }
 }
